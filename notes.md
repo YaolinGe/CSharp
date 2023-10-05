@@ -5,6 +5,19 @@
 `System.Linq` data management.
 `System.Threading` multithreading processes.
 `var number = 2; ` automatically detect datatype for variable number.
+`const` to make value constant so no acidentally changed.
+`(byte)` to cast the data to explicitly convert data types.
+`Convert.ToInt32(s)` to forcefully convert string to a integer.
+`int.Parse(s)` to parse the string to integer.
+`Add classes or folder` to make it locate in the right namespace.
+`string is immutable` so once it is created, it cannot be changed.
+`string path = @"C:\projects\etc"; ` to remove extra unnecessary `\\`.
+`Int32 == int` C# maps the primitive data types to .NET data types.
+`string.Join(", ", string_array)` to concatenate the arrays with the punctual mark.
+`typeof` to get the type of the target object.
+`string (System.String)` and `arrays (System.Array)` are classes, and they thus have their methods.
+`primitive` data types are `structure`
+``
 
 ## Overflow
 To check the overflow:
