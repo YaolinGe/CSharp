@@ -17,7 +17,17 @@
 `typeof` to get the type of the target object.
 `string (System.String)` and `arrays (System.Array)` are classes, and they thus have their methods.
 `primitive` data types are `structure`
-``
+`Trim()` remove extra spaces at the beginning or end of the string.
+`StringBuilder.Append('-', 10)
+              .Append()
+              .Append("Header")
+              .AppendLine()
+              .Append('-', 10)
+              .Replace('-', '+'),
+              .Remove()` to gather all the repeating commands.
+`F5` runs the debug mode.
+`Ctrl + F5` runs without debug mode.
+`ctor` to create a snippet for constructor
 
 ## Overflow
 To check the overflow:
