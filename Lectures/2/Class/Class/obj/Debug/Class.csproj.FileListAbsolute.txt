@@ -1,0 +1,14 @@
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Class\Class\Class\bin\Debug\Class.exe.config
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Class\Class\Class\bin\Debug\Class.exe
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Class\Class\Class\bin\Debug\Class.pdb
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Class\Class\Class\obj\Debug\Class.csproj.AssemblyReference.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Class\Class\Class\obj\Debug\Class.csproj.CoreCompileInputs.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Class\Class\Class\obj\Debug\Class.exe
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Class\Class\Class\obj\Debug\Class.pdb
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Class\Class\obj\Debug\Class.csproj.AssemblyReference.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Class\Class\obj\Debug\Class.csproj.CoreCompileInputs.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Class\Class\obj\Debug\Class.exe
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Class\Class\obj\Debug\Class.pdb
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Class\Class\bin\Debug\Class.exe.config
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Class\Class\bin\Debug\Class.exe
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Class\Class\bin\Debug\Class.pdb
