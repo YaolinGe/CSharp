@@ -27,7 +27,10 @@
               .Remove()` to gather all the repeating commands.
 `F5` runs the debug mode.
 `Ctrl + F5` runs without debug mode.
-`ctor` to create a snippet for constructor
+`ctor` to create a snippet for constructor.
+`ildasm program.exe` in the `program/bin/Debug` folder to check the IL compiled.
+`prop` to activate resharper or intellisense to generate properties for the class.
+`public Car(string registrationNumber) : base(registrationNumber)`
 
 ## Overflow
 To check the overflow:
