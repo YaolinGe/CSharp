@@ -1,0 +1,7 @@
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\DataBase\DataBase\bin\Debug\DataBase.exe.config
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\DataBase\DataBase\bin\Debug\DataBase.exe
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\DataBase\DataBase\bin\Debug\DataBase.pdb
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\DataBase\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\DataBase\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\DataBase\DataBase\obj\Debug\DataBase.exe
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\DataBase\DataBase\obj\Debug\DataBase.pdb

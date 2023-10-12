@@ -31,6 +31,41 @@
 `ildasm program.exe` in the `program/bin/Debug` folder to check the IL compiled.
 `prop` to activate resharper or intellisense to generate properties for the class.
 `public Car(string registrationNumber) : base(registrationNumber)`
+`Downcasting and Upcasting` are important concepts to grasp.
+`virtual` to make it possible to be overriden.
+`override` to override the previous step.
+`F10, F11` are very useful commands to add the watch of the program to check if the variable is correct.
+`abstract` to make it an empty class which misses implementation, cannot have implementation.
+`sealed` is slightly faster.
+`interface` to create an interface, no implementation, no access modifiers
+`OpenClosePrinciple`
+
+### String
+- `TrimStart()`
+- `Trim()`
+- `TrimEnd()`
+- `Contains()`
+- `Replace()`
+- `ToUpper()`
+- `ToLower()`
+- `StartsWith()`
+- `EndsWith()`
+
+### Numbers and integer maths
+- `int.MaxValue`
+- `int.MinValue`
+- `int.ToString()` to convert int to string.
+
+### Branches (if/else)
+`using` to import a library to make use of other people's module.
+
+### Sort, Search and Index
+`Sort()`
+`IndexOf()`
+`Index("name")`
+
+### String
+`StringBuilder().ToString()` to build a long formatted text in string format. 
 
 ## Overflow
 To check the overflow:

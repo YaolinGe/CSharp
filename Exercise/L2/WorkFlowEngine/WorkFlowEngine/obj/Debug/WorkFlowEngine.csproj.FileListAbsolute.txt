@@ -1,0 +1,7 @@
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\WorkFlowEngine\WorkFlowEngine\bin\Debug\WorkFlowEngine.exe.config
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\WorkFlowEngine\WorkFlowEngine\bin\Debug\WorkFlowEngine.exe
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\WorkFlowEngine\WorkFlowEngine\bin\Debug\WorkFlowEngine.pdb
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\WorkFlowEngine\WorkFlowEngine\obj\Debug\WorkFlowEngine.csproj.AssemblyReference.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\WorkFlowEngine\WorkFlowEngine\obj\Debug\WorkFlowEngine.csproj.CoreCompileInputs.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\WorkFlowEngine\WorkFlowEngine\obj\Debug\WorkFlowEngine.exe
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\WorkFlowEngine\WorkFlowEngine\obj\Debug\WorkFlowEngine.pdb
