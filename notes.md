@@ -1,4 +1,5 @@
-# Notes for C#
+# Notes for C# learning from both Udemy and Microsoft Learn.
+`\t, \n, \\` to add escape character. 
 
 
 ## Here comes some of the explanation for different headers:
@@ -65,7 +66,7 @@
 `Index("name")`
 
 ### String
-`StringBuilder().ToString()` to build a long formatted text in string format. 
+`StringBuilder().ToString()` to build a long formatted text in string format.
 
 ## Overflow
 To check the overflow:
@@ -77,9 +78,55 @@ checked
 }
 ```
 
+### LINQ
+`https://github.com/dotnet/try-samples` in github, check out it and download to local repo and start trying this repo.
+`https://github.com/YaolinGe/csharp-notebooks` to check out all the useful notebooks for C#.
+`https://try.dot.net` useful resource.
+
+
+### Packages
+- `dotnet add package <name> ` to install am new package.
+- `dotnet tool install <name>` to install global tools.
+- `dotnet list package` to list all the installed packages.
+- `dotnet list package --include-transitive` to list all packages including their parental packages.
+- `dotnet restore` to restore all the packages.
+- `dotnet remove package <name> ` to remove the unused packages.
+- `dotnet --list-sdks` to show all the SDK installed.
+
+
+### Debug and traces
+`System.Diagnostics.Debug` to debug.
+`System.Diagnostics.Trace` to trace.
+
+
+### Files and directories
+`Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories)` to list all files in the folder.
+`Path.DirectorySeparatorChar` to separate the folder string.
+`Path.Combine("a1", "b1")` to output the proper path.
+`Path.GetExtension("sales.json")` to get the extension of a file.
+`FileInfo(fileName)` to get the info of the file.
+`DirectoryInfo(directoryName)` to get the info of the directory.
+`info.FullName`
+`info.Directory`
+`info.Extension`
+`info.CreationTime`
+`Directory.CreateDirectory(Path.Combine("f1", "f2"))` to create directories recursively.
+`Directory.Exists(filePath)` to check if a file exists or not.
+`File.WriteAllText(Path.Combine(Directory.GetCurrentDirectory(), "greeting.txt"), "Hello World!")` to creat a file called `greeting.txt` including content `Hello World!`.
+`File.ReadAllText()` to read all text content.
+`variable?` means the varibale can either be null or something.
+
+
+### Web API
+`dotnet new webapi -f net7.0` to create a startup project.
+
+
+
+
 
 ## Shortcut
 `Ctrl + Shift + B` compile the code
 `Ctrl + Fn + F5` debug the code and see the output from the terminal console
 `cw` is Console.WriteLine in Visual Studio to boost the efficiency
 `Ctrl + Alt + J` open object browser
+`Ctrl + Shift + Y` to show/hide the debug console in VS code.
