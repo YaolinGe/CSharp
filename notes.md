@@ -1,5 +1,7 @@
 # Notes for C# learning from both Udemy and Microsoft Learn.
-`\t, \n, \\` to add escape character. 
+`\t, \n, \\` to add escape character, note that `\t` only moves the cursor to the next 8 position, so if the word itself is already 7, then it looks like a space.
+`stateless method` such as Console.WriteLine(), no need to know the state.
+`stateful method` such as instance method, needs to know the state.
 
 
 ## Here comes some of the explanation for different headers:
@@ -82,7 +84,8 @@ checked
 `https://github.com/dotnet/try-samples` in github, check out it and download to local repo and start trying this repo.
 `https://github.com/YaolinGe/csharp-notebooks` to check out all the useful notebooks for C#.
 `https://try.dot.net` useful resource.
-
+`https://dotnet.microsoft.com/en-us/learn/videos` to watch all useful videos.
+`https://www.youtube.com/watch?v=UGQP9hEakZk&list=PL8h4jt35t1wjvwFnvcB2LlYL4jLRzRmoz&pp=iAQB` to watch all useful blazor project videos.
 
 ### Packages
 - `dotnet add package <name> ` to install am new package.
@@ -117,9 +120,14 @@ checked
 `variable?` means the varibale can either be null or something.
 
 
-### Web API
+### WebAPI
 `dotnet new webapi -f net7.0` to create a startup project.
 
+
+### BlazorApp
+`dotnet new blazorserver -f net7.0` to create a new blazor server app.
+`@layout AdminLayout` can specify a sepcfic layout for the desired page.
+`_Imports.razor`
 
 
 

@@ -1,0 +1,14 @@
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\mslearn\exercise\bin\Debug\net7.0\exercise.exe
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\mslearn\exercise\bin\Debug\net7.0\exercise.deps.json
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\mslearn\exercise\bin\Debug\net7.0\exercise.runtimeconfig.json
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\mslearn\exercise\bin\Debug\net7.0\exercise.dll
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\mslearn\exercise\bin\Debug\net7.0\exercise.pdb
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\mslearn\exercise\obj\Debug\net7.0\exercise.GeneratedMSBuildEditorConfig.editorconfig
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\mslearn\exercise\obj\Debug\net7.0\exercise.AssemblyInfoInputs.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\mslearn\exercise\obj\Debug\net7.0\exercise.AssemblyInfo.cs
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\mslearn\exercise\obj\Debug\net7.0\exercise.csproj.CoreCompileInputs.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\mslearn\exercise\obj\Debug\net7.0\exercise.dll
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\mslearn\exercise\obj\Debug\net7.0\refint\exercise.dll
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\mslearn\exercise\obj\Debug\net7.0\exercise.pdb
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\mslearn\exercise\obj\Debug\net7.0\exercise.genruntimeconfig.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\mslearn\exercise\obj\Debug\net7.0\ref\exercise.dll
