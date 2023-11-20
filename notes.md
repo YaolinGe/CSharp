@@ -1,3 +1,18 @@
+# C# notes
+
+### Boxing and unboxing
+- Allows the value types to be treated as reference types and vice versa.
+- Values types:
+  - Saved on the stack
+  - Can implement interface
+- Reference types:
+  - Saved on the heap
+- Boxing:
+  - Wrap the value type in an object, so it can be used as an object.
+- Unboxing:
+  - When a method returns an object, but we need a value type, then it is needed.
+
+
 # Notes for C# learning from both Udemy and Microsoft Learn.
 `\t, \n, \\` to add escape character, note that `\t` only moves the cursor to the next 8 position, so if the word itself is already 7, then it looks like a space.
 `stateless method` such as Console.WriteLine(), no need to know the state.
@@ -96,11 +111,9 @@ checked
 - `dotnet remove package <name> ` to remove the unused packages.
 - `dotnet --list-sdks` to show all the SDK installed.
 
-
 ### Debug and traces
 `System.Diagnostics.Debug` to debug.
 `System.Diagnostics.Trace` to trace.
-
 
 ### Files and directories
 `Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories)` to list all files in the folder.
@@ -119,18 +132,13 @@ checked
 `File.ReadAllText()` to read all text content.
 `variable?` means the varibale can either be null or something.
 
-
 ### WebAPI
 `dotnet new webapi -f net7.0` to create a startup project.
-
 
 ### BlazorApp
 `dotnet new blazorserver -f net7.0` to create a new blazor server app.
 `@layout AdminLayout` can specify a sepcfic layout for the desired page.
 `_Imports.razor`
-
-
-
 
 ## Shortcut
 `Ctrl + Shift + B` compile the code
