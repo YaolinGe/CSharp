@@ -8,13 +8,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        int[] data; 
+        int[] data = new int[3]; 
+        var data1 = data;
         // Console.WriteLine(data); 
         data = new int[3]; 
         Console.WriteLine(data);
-        var id = Guid.NewGuid(); 
-
-        Console.WriteLine(id); 
-
+        Console.WriteLine(data.Length); 
     }
 }
