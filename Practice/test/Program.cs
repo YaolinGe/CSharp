@@ -8,11 +8,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        int number = 5;
-        Console.WriteLine(number.ToString()); // Using Object's ToString method
-        Console.WriteLine(number.GetHashCode()); // Using Object's GetHashCode method
-        Console.WriteLine(number.Equals(5)); // Using Object's Equals method
+        int[] data; 
+        // Console.WriteLine(data); 
+        data = new int[3]; 
+        Console.WriteLine(data);
+        var id = Guid.NewGuid(); 
 
+        Console.WriteLine(id); 
 
     }
 }

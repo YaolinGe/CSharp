@@ -7,11 +7,20 @@
   - Can implement interface
 - Reference types:
   - Saved on the heap
+  - Examples:
+    - arrays
+    - classes
+    - strings
 - Boxing:
   - Wrap the value type in an object, so it can be used as an object.
 - Unboxing:
   - When a method returns an object, but we need a value type, then it is needed.
-
+- Stack:
+  - Memory allocated to the code which is currently running on the CPU
+  - When the stack frame has finished executing, value are removed
+- Heap:
+  - Memory shared acorss many applications running the OS at the same time
+  -
 
 # Notes for C# learning from both Udemy and Microsoft Learn.
 `\t, \n, \\` to add escape character, note that `\t` only moves the cursor to the next 8 position, so if the word itself is already 7, then it looks like a space.
