@@ -22,6 +22,7 @@
   - Memory shared acorss many applications running the OS at the same time
 
 - Learn more about async and other features used in C# project
+- always check which user I am using for github.
 
 # Notes for C# learning from both Udemy and Microsoft Learn.
 `\t, \n, \\` to add escape character, note that `\t` only moves the cursor to the next 8 position, so if the word itself is already 7, then it looks like a space.
