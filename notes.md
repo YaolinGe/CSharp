@@ -1,4 +1,5 @@
 # C# notes
+- Interface and abstract and I need to check Idisposable and how to develop software or games from CS50
 
 ### Boxing and unboxing
 - Allows the value types to be treated as reference types and vice versa.
