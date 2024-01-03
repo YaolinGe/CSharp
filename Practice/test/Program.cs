@@ -1,51 +1,51 @@
 ﻿using System; 
 
-class Employee
-{
-    private string name;
-    private string alias;
-    private decimal salary = 3000.00m;
+// class Employee
+// {
+//     private string name;
+//     private string alias;
+//     private decimal salary = 3000.00m;
 
-    // Constructor:
-    public Employee(string name, string alias)
-    {
-        this.name = name; 
-        this.alias = alias; 
-    }
+//     // Constructor:
+//     public Employee(string name, string alias)
+//     {
+//         this.name = name; 
+//         this.alias = alias; 
+//     }
 
-    // Printing method:
-    public void printEmployee()
-    {
-        Console.WriteLine("Name: {0}\nAlias: {1}", name, alias);
-        // Passing the object to the CalcTax method by using this:
-        Console.WriteLine("Taxes: {0:C}", Tax.CalcTax(this));
-    }
+//     // Printing method:
+//     public void printEmployee()
+//     {
+//         Console.WriteLine("Name: {0}\nAlias: {1}", name, alias);
+//         // Passing the object to the CalcTax method by using this:
+//         Console.WriteLine("Taxes: {0:C}", Tax.CalcTax(this));
+//     }
 
-    public decimal Salary
-    {
-        get { return salary; }
-    }
-}
+//     public decimal Salary
+//     {
+//         get { return salary; }
+//     }
+// }
 
-class Tax
-{
-    public static decimal CalcTax(Employee E)
-    {
-        return 0.08m * E.Salary;
-    }
-}
+// class Tax
+// {
+//     public static decimal CalcTax(Employee E)
+//     {
+//         return 0.08m * E.Salary;
+//     }
+// }
 
-class MainClass
-{
-    static void Main()
-    {
-        // Create objects:
-        Employee E1 = new Employee("Mingda Pan", "mpan");
+// class MainClass
+// {
+//     static void Main()
+//     {
+//         // Create objects:
+//         Employee E1 = new Employee("Mingda Pan", "mpan");
 
-        // Display results:
-        E1.printEmployee();
-    }
-}
+//         // Display results:
+//         E1.printEmployee();
+//     }
+// }
 
 
 /*
@@ -117,3 +117,40 @@ Output:
 //     }
 // }
 
+
+class T 
+{
+    public int V1; 
+    private int v2;
+
+    public int V2 
+    {
+        get { return v2; }
+        set 
+        {
+            // Log the old and new value when V2 is set
+            Console.WriteLine($"Setting V2: Old Value = {v2}, New Value = {value}");
+            v2 = value;
+        }
+    }
+
+    public void printVariable()
+    {
+        Console.WriteLine($"V1: {V1}");
+        Console.WriteLine($"V2: {V2}");
+    }
+}
+
+class Program 
+{
+    static void Main(string[] args)
+    {
+        T t = new T(); 
+        t.V1 = 1; 
+        t.V2 = 2;
+        t.printVariable(); 
+        t.V1 = 2;
+        t.V2 = 3;
+        t.printVariable();
+    }
+}
