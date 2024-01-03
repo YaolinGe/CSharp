@@ -1,5 +1,9 @@
 # C# notes
 - Interface and abstract and I need to check Idisposable and how to develop software or games from CS50
+- `IProductModel` inside each interface, everything has to be public, thus no need to add public in the front of each item.
+- interface is like a contract and it has everything declared public to all so that everyone knows what exists in the contract and easy to switch later.
+- class needs to inherit from the interface to be able to behave like an interface-enabled class.
+
 
 ### Boxing and unboxing
 - Allows the value types to be treated as reference types and vice versa.
