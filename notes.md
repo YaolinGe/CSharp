@@ -1,8 +1,13 @@
 # C# notes
-- Interface and abstract and I need to check Idisposable and how to develop software or games from CS50
 - `IProductModel` inside each interface, everything has to be public, thus no need to add public in the front of each item.
-- interface is like a contract and it has everything declared public to all so that everyone knows what exists in the contract and easy to switch later.
+- interface is like a contract and it has everything declared public to all so that everyone knows what exists in the contract and easy to switch later. I cannot have private method in interface.
+- Difference between `abstract` and `interface` is that interface does not implement anything, but only provide a contract to the methods or properties that other classes need to implement. However, abstract method is somewhere in between.
 - class needs to inherit from the interface to be able to behave like an interface-enabled class.
+- `virtual` in the base class, and `override` in the children class to be able to inherit from the base class and then override it.
+- `abstract` keyword should be used in the declaration of the base class and also method inside the base class to declare a abstract method so that the children classes can implement them.
+- class library is useful and I think they have used it everywhere in the codebase.
+- `people = people.OrderBy(x => x.LastName).ToList(); ` to order the selected list from the library.
+
 
 
 ### Boxing and unboxing
