@@ -7,7 +7,14 @@
 - `abstract` keyword should be used in the declaration of the base class and also method inside the base class to declare a abstract method so that the children classes can implement them.
 - class library is useful and I think they have used it everywhere in the codebase.
 - `people = people.OrderBy(x => x.LastName).ToList(); ` to order the selected list from the library.
-
+- class proliferation leads to stovepipe design.
+- `caskaydiacove nerd font` to change `!=` to math unequal to sign.
+- `SOLID` principle
+  - Single responsibility principle
+  - Open-closed principle
+  - Liskov substitution principle
+  - Interface segregation principle
+  - Depdendency inversion principle  
 
 
 ### Boxing and unboxing

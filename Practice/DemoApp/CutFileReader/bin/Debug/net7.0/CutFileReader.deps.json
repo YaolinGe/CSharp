@@ -1,0 +1,172 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "CutFileReader/1.0.0": {
+        "dependencies": {
+          "Sandvik.Coromant.CoroPlus.Tooling.DataModel": "1.0.7-20240105.001-multi-tool-bobben"
+        },
+        "runtime": {
+          "CutFileReader.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/7.0.14": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.1423.52316"
+          }
+        }
+      },
+      "NuGet.Versioning/6.8.0": {
+        "runtime": {
+          "lib/netstandard2.0/NuGet.Versioning.dll": {
+            "assemblyVersion": "6.8.0.131",
+            "fileVersion": "6.8.0.131"
+          }
+        }
+      },
+      "protobuf-net/3.2.30": {
+        "dependencies": {
+          "protobuf-net.Core": "3.2.30"
+        },
+        "runtime": {
+          "lib/net6.0/protobuf-net.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.2.30.709"
+          }
+        }
+      },
+      "protobuf-net.Core/3.2.30": {
+        "dependencies": {
+          "System.Collections.Immutable": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/protobuf-net.Core.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.2.30.709"
+          }
+        }
+      },
+      "Sandvik.Coromant.Common/1.1.1-20231220.001-multi-tool-bobben": {
+        "dependencies": {
+          "Microsoft.Extensions.Localization.Abstractions": "7.0.14",
+          "System.Reactive": "6.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Sandvik.Coromant.Common.dll": {
+            "assemblyVersion": "1.1.1.0",
+            "fileVersion": "1.1.1.0"
+          }
+        }
+      },
+      "Sandvik.Coromant.Common.Blob/1.0.16-20231220.002-multi-tool-bobben": {
+        "dependencies": {
+          "Sandvik.Coromant.Common": "1.1.1-20231220.001-multi-tool-bobben",
+          "protobuf-net": "3.2.30"
+        },
+        "runtime": {
+          "lib/net7.0/Sandvik.Coromant.Common.Blob.dll": {
+            "assemblyVersion": "1.0.16.0",
+            "fileVersion": "1.0.16.0"
+          }
+        }
+      },
+      "Sandvik.Coromant.CoroPlus.Tooling.DataModel/1.0.7-20240105.001-multi-tool-bobben": {
+        "dependencies": {
+          "NuGet.Versioning": "6.8.0",
+          "Sandvik.Coromant.Common.Blob": "1.0.16-20231220.002-multi-tool-bobben"
+        },
+        "runtime": {
+          "lib/net7.0/Sandvik.Coromant.CoroPlus.Tooling.DataModel.dll": {
+            "assemblyVersion": "1.0.7.0",
+            "fileVersion": "1.0.7.0"
+          }
+        }
+      },
+      "System.Collections.Immutable/7.0.0": {},
+      "System.Reactive/6.0.0": {
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.1"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CutFileReader/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Localization.Abstractions/7.0.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HZwPd87CCFAlqrxkwjQrHW/ZIsOIoQuT07Mnu8duW2GF+E+P+yKRJAiq0DjDjAJKln+Ni9zQyDI2Zt+/ull1pw==",
+      "path": "microsoft.extensions.localization.abstractions/7.0.14",
+      "hashPath": "microsoft.extensions.localization.abstractions.7.0.14.nupkg.sha512"
+    },
+    "NuGet.Versioning/6.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WBu15cdv1lqKkPKXDQOEmEzwKemwrczKYlc2jtuZgRYiZ8TG8F4QzPYiE0Q9eVIpMSk8Aky7mUephf19HjBPOw==",
+      "path": "nuget.versioning/6.8.0",
+      "hashPath": "nuget.versioning.6.8.0.nupkg.sha512"
+    },
+    "protobuf-net/3.2.30": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C/UTlmxEJHAHpqm8xQK1UyJKaIynVCSNG4mVrbLgnZ7ccH28nN49O8iMJvKEodTgVbnimvy+3mIiAdW6mATwnw==",
+      "path": "protobuf-net/3.2.30",
+      "hashPath": "protobuf-net.3.2.30.nupkg.sha512"
+    },
+    "protobuf-net.Core/3.2.30": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v2ZxxYrz+X212ukSx+uqkLuPu414bvmSAnTyf+PBUKR9ENJxO4P/csorA/27456MCp1JNoMssDj/f91RDiwBfQ==",
+      "path": "protobuf-net.core/3.2.30",
+      "hashPath": "protobuf-net.core.3.2.30.nupkg.sha512"
+    },
+    "Sandvik.Coromant.Common/1.1.1-20231220.001-multi-tool-bobben": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-37NKvVNh3zAelACpwOWVsDXz7ccG9aZCcuMLVLAXme2pKzZAfrqHmdVMZbJ+kF4MC5AFezwyoXblKE4Uc6nJlA==",
+      "path": "sandvik.coromant.common/1.1.1-20231220.001-multi-tool-bobben",
+      "hashPath": "sandvik.coromant.common.1.1.1-20231220.001-multi-tool-bobben.nupkg.sha512"
+    },
+    "Sandvik.Coromant.Common.Blob/1.0.16-20231220.002-multi-tool-bobben": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7Hkrb/rSHmXnYiYa6qEKfA+8agwS0LzEjD4bXU25oI7Ajuj03FVV93rgIuuokIvozOJoHYtYyj3rEE2mSjvnNA==",
+      "path": "sandvik.coromant.common.blob/1.0.16-20231220.002-multi-tool-bobben",
+      "hashPath": "sandvik.coromant.common.blob.1.0.16-20231220.002-multi-tool-bobben.nupkg.sha512"
+    },
+    "Sandvik.Coromant.CoroPlus.Tooling.DataModel/1.0.7-20240105.001-multi-tool-bobben": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uVo3/gDMUgw6C8/+fTsMNnl0Z3pOGAea+SjxlDEJYWTZFqqGauFtr6Y83nh3dPH/rGnGSIbSHn9NlO5TJOpkDg==",
+      "path": "sandvik.coromant.coroplus.tooling.datamodel/1.0.7-20240105.001-multi-tool-bobben",
+      "hashPath": "sandvik.coromant.coroplus.tooling.datamodel.1.0.7-20240105.001-multi-tool-bobben.nupkg.sha512"
+    },
+    "System.Collections.Immutable/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dQPcs0U1IKnBdRDBkrCTi1FoajSTBzLcVTpjO4MBCMC7f4pDOIPzgBoX8JjG7X6uZRJ8EBxsi8+DR1JuwjnzOQ==",
+      "path": "system.collections.immutable/7.0.0",
+      "hashPath": "system.collections.immutable.7.0.0.nupkg.sha512"
+    },
+    "System.Reactive/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-31kfaW4ZupZzPsI5PVe77VhnvFF55qgma7KZr/E0iFTs6fmdhhG8j0mgEx620iLTey1EynOkEfnyTjtNEpJzGw==",
+      "path": "system.reactive/6.0.0",
+      "hashPath": "system.reactive.6.0.0.nupkg.sha512"
+    }
+  }
+}
