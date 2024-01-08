@@ -9,6 +9,15 @@
 - `people = people.OrderBy(x => x.LastName).ToList(); ` to order the selected list from the library.
 - class proliferation leads to stovepipe design.
 - `caskaydiacove nerd font` to change `!=` to math unequal to sign.
+
+
+# Design patterns for C#
+## Antipatterns
+- Stovepipe systems
+- The big ball of mud
+- The golden hammer
+
+## SOLID principles
 - `SOLID` principle
   - Single responsibility principle
   - Open-closed principle
