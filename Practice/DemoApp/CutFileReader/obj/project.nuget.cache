@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ila4JY905nbbf/MiPgX8XcTo/KWdPhm+L+6rJLY8EiJLapihO0vBSGtLB7K/iICurzKodA6a/qf4b7wsAid1wg==",
+  "dgSpecHash": "1McNG6mbuv5ww29ANkVcFfTriyMl6MVIA0bY0dKtzn42I6xu2tjw4jjUFcRUXil+xhgyVu5xpjHPrdJ3ervgzQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\CutFileReader\\CutFileReader.csproj",
   "expectedPackageFiles": [
@@ -12,11 +12,7 @@
     "C:\\Users\\nq9093\\.nuget\\packages\\sandvik.coromant.common.blob\\1.0.16-20231220.002-multi-tool-bobben\\sandvik.coromant.common.blob.1.0.16-20231220.002-multi-tool-bobben.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\sandvik.coromant.coroplus.tooling.datamodel\\1.0.7-20240105.001-multi-tool-bobben\\sandvik.coromant.coroplus.tooling.datamodel.1.0.7-20240105.001-multi-tool-bobben.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+    "C:\\Users\\nq9093\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

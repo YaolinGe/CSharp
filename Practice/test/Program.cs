@@ -118,39 +118,40 @@ Output:
 // }
 
 
-class T 
-{
-    public int V1; 
-    private int v2;
+// class T 
+// {
+//     public int V1; 
+//     private int v2;
 
-    public int V2 
-    {
-        get { return v2; }
-        set 
-        {
-            // Log the old and new value when V2 is set
-            Console.WriteLine($"Setting V2: Old Value = {v2}, New Value = {value}");
-            v2 = value;
-        }
-    }
+//     public int V2 
+//     {
+//         get { return v2; }
+//         set 
+//         {
+//             // Log the old and new value when V2 is set
+//             Console.WriteLine($"Setting V2: Old Value = {v2}, New Value = {value}");
+//             v2 = value;
+//         }
+//     }
 
-    public void printVariable()
-    {
-        Console.WriteLine($"V1: {V1}");
-        Console.WriteLine($"V2: {V2}");
-    }
-}
+//     public void printVariable()
+//     {
+//         Console.WriteLine($"V1: {V1}");
+//         Console.WriteLine($"V2: {V2}");
+//     }
+// }
 
-class Program 
-{
-    static void Main(string[] args)
-    {
-        T t = new T(); 
-        t.V1 = 1; 
-        t.V2 = 2;
-        t.printVariable(); 
-        t.V1 = 2;
-        t.V2 = 3;
-        t.printVariable();
-    }
-}
+// class Program 
+// {
+//     static void Main(string[] args)
+//     {
+//         T t = new T(); 
+//         t.V1 = 1; 
+//         t.V2 = 2;
+//         t.printVariable(); 
+//         t.V1 = 2;
+//         t.V2 = 3;
+//         t.printVariable();
+//     }
+// }
+

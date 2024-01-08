@@ -20,10 +20,28 @@
 ## SOLID principles
 - `SOLID` principle
   - Single responsibility principle
+    - One method for one thing
+    - One class for one thing
   - Open-closed principle
+    - open for extension
+    - closed for modification
   - Liskov substitution principle
+    - inheritance IS A relationship (square is a rectangle)
   - Interface segregation principle
-  - Depdendency inversion principle  
+    - interfaces can be inherited
+  - Dependency inversion principle  
+    - Dependency injection (DI) is different
+    - Inversion of control (IOC) is different
+- Code Review
+  - overall design: domain-driven Design, behavior-driven design
+  - functionality
+
+### Creational pattern
+- <<Enumeration>> can be used to define those magic numbers.
+- in UML, italicized class name is interpreted as an abstract class.
+- in UML, access modifiers and types can be left out as those are implementation details and can be changed very quickly.
+
+
 
 
 ### Boxing and unboxing
