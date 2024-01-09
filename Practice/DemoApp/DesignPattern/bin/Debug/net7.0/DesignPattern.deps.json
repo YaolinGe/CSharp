@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "DesignPattern/1.0.0": {
+        "dependencies": {
+          "DesignPatternLibrary": "1.0.0"
+        },
         "runtime": {
           "DesignPattern.dll": {}
+        }
+      },
+      "DesignPatternLibrary/1.0.0": {
+        "runtime": {
+          "DesignPatternLibrary.dll": {}
         }
       }
     }
   },
   "libraries": {
     "DesignPattern/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DesignPatternLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -13,3 +13,7 @@ C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DesignPattern\obj\Debug\net7.0
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DesignPattern\obj\Debug\net7.0\DesignPattern.pdb
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DesignPattern\obj\Debug\net7.0\DesignPattern.genruntimeconfig.cache
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DesignPattern\obj\Debug\net7.0\ref\DesignPattern.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DesignPattern\bin\Debug\net7.0\DesignPatternLibrary.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DesignPattern\bin\Debug\net7.0\DesignPatternLibrary.pdb
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DesignPattern\obj\Debug\net7.0\DesignPattern.csproj.AssemblyReference.cache
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DesignPattern\obj\Debug\net7.0\DesignPattern.csproj.CopyComplete

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CutFileReader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ca80007d6467464dd69a1d67b66cce9cf6f06ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("CutFileReader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CutFileReader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

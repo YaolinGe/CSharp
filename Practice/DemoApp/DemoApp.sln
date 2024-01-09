@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqLibrary", "LinqLibrary\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CutFileReader", "CutFileReader\CutFileReader.csproj", "{1536C303-5A8D-4961-9F75-33AF1EA67DE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern", "DesignPattern\DesignPattern.csproj", "{4966A4D7-2990-47AF-BB22-ADC6AF617090}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern", "DesignPattern\DesignPattern.csproj", "{4966A4D7-2990-47AF-BB22-ADC6AF617090}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternLibrary", "DesignPatternLibrary\DesignPatternLibrary.csproj", "{98D88CE0-75E6-44FB-9CE0-B12C41E912F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4966A4D7-2990-47AF-BB22-ADC6AF617090}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4966A4D7-2990-47AF-BB22-ADC6AF617090}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4966A4D7-2990-47AF-BB22-ADC6AF617090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D88CE0-75E6-44FB-9CE0-B12C41E912F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D88CE0-75E6-44FB-9CE0-B12C41E912F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D88CE0-75E6-44FB-9CE0-B12C41E912F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D88CE0-75E6-44FB-9CE0-B12C41E912F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

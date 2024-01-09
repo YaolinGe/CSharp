@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "DesignPatternLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/DesignPatternLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DesignPatternLibrary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DesignPatternLibrary/1.0.0": {
+      "type": "project",
+      "path": "../DesignPatternLibrary/DesignPatternLibrary.csproj",
+      "msbuildProject": "../DesignPatternLibrary/DesignPatternLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "DesignPatternLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\nq9093\\.nuget\\packages\\": {},
@@ -40,7 +59,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\DesignPatternLibrary\\DesignPatternLibrary.csproj": {
+              "projectPath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\DesignPatternLibrary\\DesignPatternLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

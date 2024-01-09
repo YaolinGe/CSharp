@@ -21,4 +21,4 @@ var temp = await fileLoaded.GetDataSeriesValuesByDataDescriptionAsync(allData.Wh
 //temp.Values.ToList().ForEach(v => Console.WriteLine(v));
 Console.WriteLine(temp.Values.ToList()[0]);
 
-Console.WriteLine(fileLoaded.Process.); 
+//Console.WriteLine(fileLoaded.Process.); 
