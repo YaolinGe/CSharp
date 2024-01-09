@@ -38,11 +38,19 @@
 
 ### Creational pattern
 - <<Enumeration>> can be used to define those magic numbers.
-- in UML, italicized class name is interpreted as an abstract class.
-- in UML, access modifiers and types can be left out as those are implementation details and can be changed very quickly.
+- in UML, `italicized` class name is interpreted as an abstract class.
+- in UML, access modifiers and types can be left out as those are implementation details and can be changed very quickly. Can be added if both developer and architect is the same person.
+- `Simple Factory` is like hello world like an idiom used for beginners.
+- `Factory Method`
+
+### Dispose pattern
+- `using PureManagedClass pmc = new PureManagedClass(); ` to properly use the dispose method once it is finished with the nearest curly braces. If `using` keyword is ignored, then it might not manage the resources responsibly.
+- better use dispose instead of finalizer, finalizer is slow and inefficient.
 
 
-
+## UML
+- OOAD (object-oriented analysis and design)
+-
 
 ### Boxing and unboxing
 - Allows the value types to be treated as reference types and vice versa.

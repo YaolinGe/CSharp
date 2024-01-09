@@ -11,17 +11,39 @@
 //{
 //    Console.WriteLine($"{person.FirstName} {person.LastName} is a {person.Title} and has {person.YearsExperience} years of experience.");
 //}
-using ConsoleUI; 
+using ConsoleUI;
 
-Console.WriteLine("Hello"); 
-List<IControlSystem> platforms = new List<IControlSystem>();
-platforms.Add(new Car());
-platforms.Add(new Plane());
 
-foreach (IControlSystem platform in platforms)
+
+public class Program
 {
-    Console.WriteLine(platform.Accelerate());
+    static void Run()
+    {
+        PureManagedClass pureManagedClass = new PureManagedClass();
+        
+        pureManagedClass.StartWriting();
+
+    }
+
+    static void Main()
+    {
+        Run();
+        Console.WriteLine("Finished disposing. ");
+        GC.Collect();
+        GC.WaitForPendingFinalizers();
+    }
 }
+
+
+//Console.WriteLine("Hello"); 
+//List<IControlSystem> platforms = new List<IControlSystem>();
+//platforms.Add(new Car());
+//platforms.Add(new Plane());
+
+//foreach (IControlSystem platform in platforms)
+//{
+//    Console.WriteLine(platform.Accelerate());
+//}
 
 
 
