@@ -9,6 +9,8 @@
 - `people = people.OrderBy(x => x.LastName).ToList(); ` to order the selected list from the library.
 - class proliferation leads to stovepipe design.
 - `caskaydiacove nerd font` to change `!=` to math unequal to sign.
+- `public async Task function()` to return `Task` from a asynchronous function, do not return `void` from an asynchronous method. 
+- `await` should be used for that specific task.
 
 
 # Design patterns for C#
