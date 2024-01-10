@@ -77,6 +77,15 @@
 - always check which user I am using for github.
 
 # Notes for C# learning from both Udemy and Microsoft Learn.
+- `stuct` variable always live in stack if they don't belong to any class object.
+- `int`, `double`, `datetime` live in stack as they are small.
+- `static` function cannot access global variables.
+- once a new function is created, then a separate stack region is created as well to separate the concern from other areas.
+- every method gets its own stack frame.
+- `class` lives on the heap memory.
+- `(x is null) == (!x.HasValue)` are the same, but the first one is preferred.
+- large object is probably long-living object.
+
 `\t, \n, \\` to add escape character, note that `\t` only moves the cursor to the next 8 position, so if the word itself is already 7, then it looks like a space.
 `stateless method` such as Console.WriteLine(), no need to know the state.
 `stateful method` such as instance method, needs to know the state.

@@ -12,27 +12,68 @@
 //    Console.WriteLine($"{person.FirstName} {person.LastName} is a {person.Title} and has {person.YearsExperience} years of experience.");
 //}
 using ConsoleUI;
+namespace GarbageCollection;
 
-
-
-public class Program
+class Program
 {
+    static void ShortLives(Person parent)
+    {
+        Person fred = new Person
+        {
+            Name = "Fred",
+            ChildOne = new Person
+            {
+                Name = "Bamm-Bamm"
+            }
+        };
+        parent.ChildTwo = fred.ChildOne; 
+    }
+
     static void Run()
     {
-        PureManagedClass pureManagedClass = new PureManagedClass();
-        
-        pureManagedClass.StartWriting();
+        Person wilma = new Person
+        {
+            Name = "Wilma",
+            ChildOne = new Person { Name = "Pebbles" }
+        };
 
+        ShortLives(wilma);
+
+        Console.WriteLine("Leaving 'ShortLives'...");
+
+        GC.Collect();
+        GC.WaitForPendingFinalizers(); 
     }
 
     static void Main()
     {
         Run();
-        Console.WriteLine("Finished disposing. ");
+        Console.WriteLine("\n Leaving 'Run'...");
+
         GC.Collect();
         GC.WaitForPendingFinalizers();
     }
 }
+
+
+//public class Program
+//{
+//    static void Run()
+//    {
+//        PureManagedClass pureManagedClass = new PureManagedClass();
+
+//        pureManagedClass.StartWriting();
+
+//    }
+
+//    static void Main()
+//    {
+//        Run();
+//        Console.WriteLine("Finished disposing. ");
+//        GC.Collect();
+//        GC.WaitForPendingFinalizers();
+//    }
+//}
 
 
 //Console.WriteLine("Hello"); 
