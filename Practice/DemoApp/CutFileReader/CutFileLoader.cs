@@ -1,30 +1,32 @@
 ﻿using Sandvik.Coromant.CoroPlus.Tooling.DataModel;
 
-namespace CutFile;
-
-public class CutFileLoader
+namespace CutFileReader
 {
-    private CoroPlusDataModel _fileLoaded;
-    
-    public CutFileLoader(string filePath)
+    public class CutFileLoader
     {
-        LoadFileAsync(filePath).Wait();
-    }
+        private CoroPlusDataModel _fileLoaded;
 
-    private async Task LoadFileAsync(string filePath)
-    {
-        _fileLoaded = await CutFileOperations.ReadAllFromFileAsync(filePath);
-    }
-
-    public async Task<List<KeyValuePair<TimeSpan, double>>> GetSensorData(string sensorName)
-    {
-        var dataDescription = _fileLoaded.DataDescriptions.FirstOrDefault(d => d.Description == sensorName); 
-        if (dataDescription is null)
+        public CutFileLoader(string filePath)
         {
-            return new List<KeyValuePair<TimeSpan, double>>(); 
+            LoadFileAsync(filePath).Wait();
         }
-        
-        var data = await _fileLoaded.GetDataSeriesValuesByDataDescriptionAsync(dataDescription);
-        return data.Values.ToList(); 
+
+        private async Task LoadFileAsync(string filePath)
+        {
+            _fileLoaded = await CutFileOperations.ReadAllFromFileAsync(filePath);
+        }
+
+        public async Task<List<KeyValuePair<TimeSpan, double>>> GetSensorData(string sensorName)
+        {
+            var dataDescription = _fileLoaded.DataDescriptions.FirstOrDefault(d => d.Description == sensorName);
+            if (dataDescription is null)
+            {
+                return new List<KeyValuePair<TimeSpan, double>>();
+            }
+
+            var data = await _fileLoaded.GetDataSeriesValuesByDataDescriptionAsync(dataDescription);
+            return data.Values.ToList();
+        }
     }
+
 }
