@@ -1,0 +1,13 @@
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileOperationsLibrary\bin\Debug\net7.0\CutFileOperationsLibrary.deps.json
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileOperationsLibrary\bin\Debug\net7.0\CutFileOperationsLibrary.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileOperationsLibrary\bin\Debug\net7.0\CutFileOperationsLibrary.pdb
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileOperationsLibrary\obj\Debug\net7.0\CutFileOperationsLibrary.csproj.AssemblyReference.cache
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileOperationsLibrary\obj\Debug\net7.0\CutFileOperationsLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileOperationsLibrary\obj\Debug\net7.0\CutFileOperationsLibrary.AssemblyInfoInputs.cache
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileOperationsLibrary\obj\Debug\net7.0\CutFileOperationsLibrary.AssemblyInfo.cs
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileOperationsLibrary\obj\Debug\net7.0\CutFileOperationsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileOperationsLibrary\obj\Debug\net7.0\CutFileOperationsLibrary.sourcelink.json
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileOperationsLibrary\obj\Debug\net7.0\CutFileOperationsLibrary.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileOperationsLibrary\obj\Debug\net7.0\refint\CutFileOperationsLibrary.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileOperationsLibrary\obj\Debug\net7.0\CutFileOperationsLibrary.pdb
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileOperationsLibrary\obj\Debug\net7.0\ref\CutFileOperationsLibrary.dll

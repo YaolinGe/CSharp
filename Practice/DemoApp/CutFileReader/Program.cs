@@ -1,10 +1,20 @@
-﻿using CutFileReader;
-using Sandvik.Coromant.CoroPlus.Tooling.DataModel;
+﻿namespace CutFile;
 
+public class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello");
+        //string filePath = @"C:\Users\nq9093\Downloads\ExportedFiles_20240105_024938\CoroPlus_230912-145816.cut";
 
-Console.WriteLine("Hello");
-string filePath = @"C:\Users\nq9093\Downloads\ExportedFiles_20240105_024938\CoroPlus_230912-145816.cut";
+        CutFileLoader cutFileLoader = new(args[0]);
 
-CutFileLoader cutFileLoader = new(filePath);
+        var task = cutFileLoader.GetSensorData("Temperature");
+        task.Wait(); 
 
+        //
 
+        Console.WriteLine(task.Result.Count);
+
+    }
+}
