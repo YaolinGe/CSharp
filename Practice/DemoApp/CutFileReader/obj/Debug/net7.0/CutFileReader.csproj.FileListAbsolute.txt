@@ -3,6 +3,7 @@ C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileReader\bin\Debug\net7.0
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileReader\bin\Debug\net7.0\CutFileReader.runtimeconfig.json
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileReader\bin\Debug\net7.0\CutFileReader.dll
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileReader\bin\Debug\net7.0\CutFileReader.pdb
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileReader\bin\Debug\net7.0\Google.Protobuf.dll
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileReader\bin\Debug\net7.0\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileReader\bin\Debug\net7.0\NuGet.Versioning.dll
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\CutFileReader\bin\Debug\net7.0\protobuf-net.dll

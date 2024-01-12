@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "Google.Protobuf/3.25.2": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Localization.Abstractions/7.0.14": {
         "type": "package",
         "compile": {
@@ -142,6 +155,29 @@
     }
   },
   "libraries": {
+    "Google.Protobuf/3.25.2": {
+      "sha512": "g/xIIeLhR77bl4ajGGbPYRmZf5acJlCRaSBqUnU8+2aQYREnZnv+UccRNndHof4mWO1ORS0b5i6on40VOjBpsg==",
+      "type": "package",
+      "path": "google.protobuf/3.25.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "google.protobuf.3.25.2.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.pdb",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/net5.0/Google.Protobuf.dll",
+        "lib/net5.0/Google.Protobuf.pdb",
+        "lib/net5.0/Google.Protobuf.xml",
+        "lib/netstandard1.1/Google.Protobuf.dll",
+        "lib/netstandard1.1/Google.Protobuf.pdb",
+        "lib/netstandard1.1/Google.Protobuf.xml",
+        "lib/netstandard2.0/Google.Protobuf.dll",
+        "lib/netstandard2.0/Google.Protobuf.pdb",
+        "lib/netstandard2.0/Google.Protobuf.xml"
+      ]
+    },
     "Microsoft.Extensions.Localization.Abstractions/7.0.14": {
       "sha512": "HZwPd87CCFAlqrxkwjQrHW/ZIsOIoQuT07Mnu8duW2GF+E+P+yKRJAiq0DjDjAJKln+Ni9zQyDI2Zt+/ull1pw==",
       "type": "package",
@@ -320,6 +356,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Google.Protobuf >= 3.25.2",
       "Sandvik.Coromant.CoroPlus.Tooling.DataModel >= 1.0.7-20240105.001-multi-tool-bobben"
     ]
   },
@@ -369,6 +406,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Google.Protobuf": {
+            "target": "Package",
+            "version": "[3.25.2, )"
+          },
           "Sandvik.Coromant.CoroPlus.Tooling.DataModel": {
             "target": "Package",
             "version": "[1.0.7-20240105.001-multi-tool-bobben, )"

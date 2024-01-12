@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.25.2" />
     <PackageReference Include="Sandvik.Coromant.CoroPlus.Tooling.DataModel" Version="1.0.7-20240105.001-multi-tool-bobben" />
   </ItemGroup>
 

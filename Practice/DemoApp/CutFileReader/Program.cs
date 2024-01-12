@@ -1,12 +1,22 @@
-﻿namespace CutFile;
+﻿namespace CutFileReader;
 
 public class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
-        Console.WriteLine("Hello");
-        //string filePath = @"C:\Users\nq9093\Downloads\ExportedFiles_20240105_024938\CoroPlus_230912-145816.cut";
+        if (args.Length < 2)
+        {
+            Console.WriteLine("Usage: CutFileReader.exe <cutFilePath> <sensorName>");
+            return;
+        }
 
-        CutFileLoader cutFileLoader = new(args[0]);
+        string filePath = args[0];
+        string sensorName = args[1];
+
+        CutFileLoader loader = new CutFileLoader(filePath);
+
+        // Save sensor data to a Protobuf file
+        await loader.SaveSensorDataToProtobuf(filePath, sensorName);
+
     }
 }

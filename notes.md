@@ -9,8 +9,12 @@
 - `people = people.OrderBy(x => x.LastName).ToList(); ` to order the selected list from the library.
 - class proliferation leads to stovepipe design.
 - `caskaydiacove nerd font` to change `!=` to math unequal to sign.
-- `public async Task function()` to return `Task` from a asynchronous function, do not return `void` from an asynchronous method. 
+- `public async Task function()` to return `Task` from a asynchronous function, do not return `void` from an asynchronous method.
 - `await` should be used for that specific task.
+
+# CI/CD for web app
+- `render.com` can be used to deploy dash app for free.
+- `pythongoanywhere.com` can be used to deploy dash app for free.
 
 
 # Design patterns for C#

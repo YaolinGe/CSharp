@@ -1,0 +1,5 @@
+C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\obj\Debug\net7.0\CutFileParserCLI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\obj\Debug\net7.0\CutFileParserCLI.AssemblyInfoInputs.cache
+C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\obj\Debug\net7.0\CutFileParserCLI.AssemblyInfo.cs
+C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\obj\Debug\net7.0\CutFileParserCLI.csproj.CoreCompileInputs.cache
+C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\obj\Debug\net7.0\CutFileParserCLI.sourcelink.json
