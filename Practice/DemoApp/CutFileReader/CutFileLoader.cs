@@ -20,6 +20,14 @@ namespace CutFileReader
             _fileLoaded = await CutFileOperations.ReadAllFromFileAsync(filePath);
         }
 
+        public void GetSensorLists()
+        {
+            foreach (var item in _fileLoaded.DataDescriptions)
+            {
+                Console.WriteLine(item.Description);
+            }
+        }
+
         public async Task<List<KeyValuePair<TimeSpan, double>>> GetSensorData(string sensorName)
         {
             var dataDescription = _fileLoaded.DataDescriptions.FirstOrDefault(d => d.Description == sensorName);
@@ -32,22 +40,6 @@ namespace CutFileReader
             return data.Values.ToList();
         }
 
-        public async Task SaveSensorDataToProtobuf(string filePath, string sensorName)
-        {
-            var sensorDataList = new SensorDataList();
-
-            List<KeyValuePair<TimeSpan, double>> data = await GetSensorData(sensorName);
-            foreach (KeyValuePair<TimeSpan, double> item in data)
-            {
-                sensorDataList.Data.Add(new SensorDataEntry { TimeSpan = item.Key.ToString(), Value = item.Value });
-            }
-
-            using (FileStream output = File.Create("sensor_data.protobuf"))
-            {
-                sensorDataList.WriteTo(output);
-                Console.WriteLine("Sensor data has been saved to 'sensor_data.protobuf'");
-            }
-        }
     }
 
 }

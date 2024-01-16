@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace BuilderPattern;
 
-namespace BuilderPattern
+public interface IBicycleBuilder
 {
-    internal class IBicycleBuilder
-    {
-    }
+    public void Reset();
+    public void BuildFrame();
+    public void BuildHandleBars();
+    public void BuildSeat();
+    public void BuildSuspension();
+    public void BuildDriveTrain();
+    public void BuildBrakes();
+    public IBicycleProduct GetProduct();
 }
