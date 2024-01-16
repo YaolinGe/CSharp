@@ -48,7 +48,10 @@
 - in UML, access modifiers and types can be left out as those are implementation details and can be changed very quickly. Can be added if both developer and architect is the same person.
 - `Simple Factory` is like hello world like an idiom used for beginners.
 - `Factory Method` is use interface to link the product.
-- `abstract factory method` is to separate different parts from each factory. 
+- `abstract factory method` is to separate different parts from each factory.
+- `builder pattern` is essential composing different procedures together.
+- `object pool` to have a pool of object instances to make concurrent distribution.
+- `singleton` to only have one instance over the whole program, to make it not changeble by other parts of the program.
 
 ### Dispose pattern
 - `using PureManagedClass pmc = new PureManagedClass(); ` to properly use the dispose method once it is finished with the nearest curly braces. If `using` keyword is ignored, then it might not manage the resources responsibly.
