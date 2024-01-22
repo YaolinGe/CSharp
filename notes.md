@@ -53,6 +53,16 @@
 - `object pool` to have a pool of object instances to make concurrent distribution.
 - `singleton` to only have one instance over the whole program, to make it not changeble by other parts of the program.
 
+
+### Structural pattern
+- Helps to maintain flexibility and efficiency.
+- `Decorator pattern` wrapping functions into extensions, but not modify the base class.
+- 
+
+
+### Behavior pattern
+
+
 ### Dispose pattern
 - `using PureManagedClass pmc = new PureManagedClass(); ` to properly use the dispose method once it is finished with the nearest curly braces. If `using` keyword is ignored, then it might not manage the resources responsibly.
 - better use dispose instead of finalizer, finalizer is slow and inefficient.
