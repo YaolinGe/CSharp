@@ -58,7 +58,8 @@
 - Helps to maintain flexibility and efficiency.
 - `Decorator pattern` wrapping functions into extensions, but not modify the base class.
 - `Facade pattern` to wrap the API calls to avoid dependency to different API providers, avoid tight coupling. It has a wrapper to talk to different APIs to fix the coupling issues. Remember to name the function generally to better remove the detailed implementation of each method.
-- `Composite pattern` 
+- `Composite pattern` makes the main component based on many subcomponents, and they share some common properties.
+- `Bridge pattern` 
 
 
 
