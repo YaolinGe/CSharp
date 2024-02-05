@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FOPiEcAbxw52Pj4eLducI8eVKbpL1tZ7eYsdnWifXn3NgUeCqWp2RsFyAn5qQnW3VtRXFpSffv5L5vTbwMoJBA==",
+  "dgSpecHash": "Pc79+a8nz3kQIgTSZ+l8pG9TuwZcHWejqBRWBhkuiX/TlQF3AVbFDki76pv7w3yA65yoX/pq05jy+6jsDjmNZw==",
   "success": true,
   "projectFilePath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\DesignPatternLibrary\\DesignPatternLibrary.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qxvipeurU2r7Zopd3Qe68iUEJzjDtM3bGfFlJzB/srSsKIKu3Quy2PCUJtrFid8QAD9LuM2du/mBtPx1LfJ+0g==",
+  "dgSpecHash": "pO0IT11aml7+7cG1fx9QOzaHIvEThNc7TZPmVGwhdJiurkpavBymglK0xbSsby0xyvKexIIopEBPDGMNcKV2Xw==",
   "success": true,
   "projectFilePath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\DemoLibrary\\DemoLibrary.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

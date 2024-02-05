@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AStTYiPinC6Sjtd6Q/Rn1klmGN5rhIYpRiwD+qZjxe8CgqEWxtjJQ8UX4QR1gC5MZnJuWMIYZ8lMH7r9e3lTbQ==",
+  "dgSpecHash": "WeBKwi95tOLXVw/mykCa7xR0kfBB18629LsCnkTsjzqX7poFNC6HZi0//RCzOhXi1TRqVRL2OOocvoe+wiJB8Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\CutFileParserCLI\\CutFileParserCLI\\CutFileParserCLI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nq9093\\.nuget\\packages\\csvhelper\\30.1.0\\csvhelper.30.1.0.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\google.protobuf\\3.25.2\\google.protobuf.3.25.2.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\7.0.14\\microsoft.extensions.localization.abstractions.7.0.14.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\nuget.versioning\\6.8.0\\nuget.versioning.6.8.0.nupkg.sha512",
@@ -13,6 +14,7 @@
     "C:\\Users\\nq9093\\.nuget\\packages\\sandvik.coromant.common.blob\\1.0.16-20240108.003-master\\sandvik.coromant.common.blob.1.0.16-20240108.003-master.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\sandvik.coromant.coroplus.tooling.datamodel\\1.0.7-20240108.001-multi-tool-bobben\\sandvik.coromant.coroplus.tooling.datamodel.1.0.7-20240108.001-multi-tool-bobben.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\system.linq.async\\4.0.0\\system.linq.async.4.0.0.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512"
   ],
   "logs": []

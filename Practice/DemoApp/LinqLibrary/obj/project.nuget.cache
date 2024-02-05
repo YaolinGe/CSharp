@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SX4s5Xp+EZas6M9RRK66vm4R/XiRkHY0WsDW5r80gHK0bpFeIiJ/QPiDywq+BNQRXeLds5oErGanjEJVo0GLcA==",
+  "dgSpecHash": "eDTMKw0Q60Pz6FRKuuP6hwZoFRC+eVrJohpy6RgBqteDFrvh7MXKb4LP56Q31G5AGb2BhpmqX9yg1h6WpjyXNQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\LinqLibrary\\LinqLibrary.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

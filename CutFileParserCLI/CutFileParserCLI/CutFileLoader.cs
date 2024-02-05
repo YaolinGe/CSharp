@@ -1,7 +1,9 @@
 ﻿using Sandvik.Coromant.CoroPlus.Tooling.DataModel;
 using Google.Protobuf;
 using System.IO;
-using SensorData; // The generated namespace from your .proto file
+using SensorData;
+using CsvHelper;
+using System.Globalization; // The generated namespace from your .proto file
 
 
 namespace CutFileParser
@@ -32,21 +34,38 @@ namespace CutFileParser
             return data.Values.ToList();
         }
 
-        public async Task SaveSensorDataToProtobuf(string filePath, string sensorName)
+        public async Task SaveSensorDataToCSV(string filePath, string sensorName)
         {
-            var sensorDataList = new SensorDataList();
-
             List<KeyValuePair<TimeSpan, double>> data = await GetSensorData(sensorName);
-            foreach (KeyValuePair<TimeSpan, double> item in data)
+            string tempPath = Path.GetTempPath();
+            string subfolder = "CutFileParser";
+            Directory.CreateDirectory(Path.Combine(tempPath, subfolder));
+            string csvFileName = Path.Combine(tempPath, subfolder, $"{sensorName}.csv");
+
+            using (var writer = new StreamWriter(csvFileName))
+            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
             {
-                sensorDataList.Data.Add(new SensorDataEntry { TimeSpan = item.Key.ToString(), Value = item.Value });
+                csv.WriteRecords(data.Select(kv => new { Time = kv.Key.ToString(), Value = kv.Value }));
             }
 
-            using (FileStream output = File.Create("sensor_data.protobuf"))
-            {
-                sensorDataList.WriteTo(output);
-                Console.WriteLine("Sensor data has been saved to 'sensor_data.protobuf'");
-            }
+            Console.WriteLine($"Sensor data for '{sensorName}' has been saved to '{csvFileName}'");
         }
+
+        //public async Task SaveSensorDataToProtobuf(string filePath, string sensorName)
+        //{
+        //    var sensorDataList = new SensorDataList();
+
+        //    List<KeyValuePair<TimeSpan, double>> data = await GetSensorData(sensorName);
+        //    foreach (KeyValuePair<TimeSpan, double> item in data)
+        //    {
+        //        sensorDataList.Data.Add(new SensorDataEntry { TimeSpan = item.Key.ToString(), Value = item.Value });
+        //    }
+
+        //    using (FileStream output = File.Create("sensor_data.protobuf"))
+        //    {
+        //        sensorDataList.WriteTo(output);
+        //        Console.WriteLine("Sensor data has been saved to 'sensor_data.protobuf'");
+        //    }
+        //}
     }
 }

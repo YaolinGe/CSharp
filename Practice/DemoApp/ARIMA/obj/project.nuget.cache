@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SPyIr9ATm9cl1ub8Xuh36P5n1Vw7yCGhb191eFWRZ6H5ibmObfHltQRe0oxTFzj6VRIe5dU4MSt+wFcFskIP5g==",
+  "dgSpecHash": "usKxJ1vZF77Hw31Qn/5CDvNKfWXbhvnoDuZQEefIRgSyjUggg1nkSCcpoygnE5XmpIx89c/yv4R2XdwBPe323Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\ARIMA\\ARIMA.csproj",
   "expectedPackageFiles": [
@@ -44,11 +44,7 @@
     "C:\\Users\\nq9093\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\tensorflow.keras\\0.15.0\\tensorflow.keras.0.15.0.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\tensorflow.net\\0.150.0\\tensorflow.net.0.150.0.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
+    "C:\\Users\\nq9093\\.nuget\\packages\\tensorflow.net\\0.150.0\\tensorflow.net.0.150.0.nupkg.sha512"
   ],
   "logs": []
 }

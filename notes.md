@@ -56,15 +56,18 @@
 
 ### Structural pattern
 - Helps to maintain flexibility and efficiency.
-- `Decorator pattern` wrapping functions into extensions, but not modify the base class.
+- `Decorator pattern` wrapping functions into extensions, but not modify the base class. Matryoshka 俄罗斯套娃
 - `Facade pattern` to wrap the API calls to avoid dependency to different API providers, avoid tight coupling. It has a wrapper to talk to different APIs to fix the coupling issues. Remember to name the function generally to better remove the detailed implementation of each method.
 - `Composite pattern` makes the main component based on many subcomponents, and they share some common properties.
-- `Bridge pattern` 
-
-
+- `Bridge pattern` use a bridge to merge the gap between the two complex hierarchies. Good to have in the design phase before reaching the code.
+# TODO: need to check youtube videos more to gain a deep understanding.
 
 
 ### Behavior pattern
+- `Command pattern`
+- `Iterator pattern`
+- `Observer pattern`
+- `Strategy pattern`
 
 
 ### Dispose pattern
@@ -242,3 +245,7 @@ checked
 `cw` is Console.WriteLine in Visual Studio to boost the efficiency
 `Ctrl + Alt + J` open object browser
 `Ctrl + Shift + Y` to show/hide the debug console in VS code.
+
+# Books to read
+- `Agile Principles, Patterns, and Practices in C#`
+- `Agile Software Development, Principles, Patterns, and Practices First Edition`

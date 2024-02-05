@@ -3,6 +3,7 @@ C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Debug\net
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Debug\net7.0\CutFileParserCLI.runtimeconfig.json
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Debug\net7.0\CutFileParserCLI.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Debug\net7.0\CutFileParserCLI.pdb
+C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Debug\net7.0\CsvHelper.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Debug\net7.0\Google.Protobuf.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Debug\net7.0\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Debug\net7.0\NuGet.Versioning.dll
@@ -11,6 +12,7 @@ C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Debug\net
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Debug\net7.0\Sandvik.Coromant.Common.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Debug\net7.0\Sandvik.Coromant.Common.Blob.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Debug\net7.0\Sandvik.Coromant.CoroPlus.Tooling.DataModel.dll
+C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Debug\net7.0\System.Linq.Async.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Debug\net7.0\System.Reactive.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\obj\Debug\net7.0\CutFileParserCLI.csproj.AssemblyReference.cache
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\obj\Debug\net7.0\CutFileParserCLI.GeneratedMSBuildEditorConfig.editorconfig
