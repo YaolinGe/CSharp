@@ -1,12 +1,12 @@
 ﻿namespace CutFileParser
-{ 
+{
     public class Program
     {
         static async Task Main(string[] args)
         {
             if (args.Length < 1)
             {
-                Console.WriteLine("Usage: CutFileReader.exe <cutFilePath>");
+                Console.WriteLine("Usage: CutFileParserCLI.exe <cutFilePath>");
                 return;
             }
 
@@ -14,21 +14,23 @@
 
             List<string> sensors = new List<string>
             {
-                "Box1Accelerometer2GRaw0",
-                "Box1Accelerometer2GRaw1",
-                "Box1Accelerometer2GRaw2",
-                "Box1Accelerometer50GRaw0",
-                "Box1Accelerometer50GRaw1",
-                "Box2StrainRaw0",
-                "Box2StrainRaw1",
-                "Box3Clock",
-                "Box1ClockPeripheral",
-                "Box2ClockPeripheral",
-                "Deflection",
-                "Load",
-                "SurfaceFinish",
-                "Vibration",
-                "Temperature"
+                "BobbenAccelerometerX",
+                "BobbenAccelerometerY",
+                //"Box1Accelerometer2GRaw0",
+                //"Box1Accelerometer2GRaw1",
+                //"Box1Accelerometer2GRaw2",
+                //"Box1Accelerometer50GRaw0",
+                //"Box1Accelerometer50GRaw1",
+                //"Box2StrainRaw0",
+                //"Box2StrainRaw1",
+                //"Box3Clock",
+                //"Box1ClockPeripheral",
+                //"Box2ClockPeripheral",
+                //"Deflection",
+                //"Load",
+                //"SurfaceFinish",
+                //"Vibration",
+                //"Temperature"
             };
 
             CutFileLoader loader = new CutFileLoader(filePath);
@@ -42,3 +44,4 @@
         }
     }
 }
+

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "nwAwcrjG5W6JoIUYRD6ZOGYU7QaW1/BazBiFdxO6mFX1HNTUJgpqYqlBdGw3wycaSswTI6Tn2Va4rYqpWUR3+Q==",
+  "dgSpecHash": "5i5lK50idImTmeE3wA5JO5nXtdsRvvjVKJGjRTa+G/RRDqYS6Jyeh1bxpHuieTGSICh0NWmTOarQOwOSim+0cQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\ConsoleUI\\ConsoleUI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

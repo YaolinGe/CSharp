@@ -3,7 +3,6 @@ C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\n
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\CutFileParserCLI.runtimeconfig.json
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\CutFileParserCLI.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\CutFileParserCLI.pdb
-C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\Google.Protobuf.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\NuGet.Versioning.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\protobuf-net.dll
@@ -207,4 +206,4 @@ C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\obj\Release\n
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\obj\Release\net7.0\win-x64\ref\CutFileParserCLI.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\CsvHelper.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\System.Linq.Async.dll
-C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\mscordaccore_amd64_amd64_7.0.1523.57226.dll
+C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\mscordaccore_amd64_amd64_7.0.1624.6629.dll

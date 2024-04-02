@@ -18,19 +18,6 @@
           }
         }
       },
-      "Google.Protobuf/3.25.2": {
-        "type": "package",
-        "compile": {
-          "lib/net5.0/Google.Protobuf.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net5.0/Google.Protobuf.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
       "Microsoft.Extensions.Localization.Abstractions/7.0.14": {
         "type": "package",
         "compile": {
@@ -210,29 +197,6 @@
         "lib/netstandard2.0/CsvHelper.xml",
         "lib/netstandard2.1/CsvHelper.dll",
         "lib/netstandard2.1/CsvHelper.xml"
-      ]
-    },
-    "Google.Protobuf/3.25.2": {
-      "sha512": "g/xIIeLhR77bl4ajGGbPYRmZf5acJlCRaSBqUnU8+2aQYREnZnv+UccRNndHof4mWO1ORS0b5i6on40VOjBpsg==",
-      "type": "package",
-      "path": "google.protobuf/3.25.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "google.protobuf.3.25.2.nupkg.sha512",
-        "google.protobuf.nuspec",
-        "lib/net45/Google.Protobuf.dll",
-        "lib/net45/Google.Protobuf.pdb",
-        "lib/net45/Google.Protobuf.xml",
-        "lib/net5.0/Google.Protobuf.dll",
-        "lib/net5.0/Google.Protobuf.pdb",
-        "lib/net5.0/Google.Protobuf.xml",
-        "lib/netstandard1.1/Google.Protobuf.dll",
-        "lib/netstandard1.1/Google.Protobuf.pdb",
-        "lib/netstandard1.1/Google.Protobuf.xml",
-        "lib/netstandard2.0/Google.Protobuf.dll",
-        "lib/netstandard2.0/Google.Protobuf.pdb",
-        "lib/netstandard2.0/Google.Protobuf.xml"
       ]
     },
     "Microsoft.Extensions.Localization.Abstractions/7.0.14": {
@@ -441,7 +405,6 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "CsvHelper >= 30.1.0",
-      "Google.Protobuf >= 3.25.2",
       "Sandvik.Coromant.CoroPlus.Tooling.DataModel >= 1.0.7-20240108.001-multi-tool-bobben"
     ]
   },
@@ -495,10 +458,6 @@
             "target": "Package",
             "version": "[30.1.0, )"
           },
-          "Google.Protobuf": {
-            "target": "Package",
-            "version": "[3.25.2, )"
-          },
           "Sandvik.Coromant.CoroPlus.Tooling.DataModel": {
             "target": "Package",
             "version": "[1.0.7-20240108.001-multi-tool-bobben, )"
@@ -515,12 +474,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.17, 7.0.17]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.17, 7.0.17]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.17, 7.0.17]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.17, 7.0.17]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

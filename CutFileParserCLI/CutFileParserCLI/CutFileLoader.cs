@@ -1,7 +1,7 @@
 ﻿using Sandvik.Coromant.CoroPlus.Tooling.DataModel;
-using Google.Protobuf;
-using System.IO;
-using SensorData;
+//using Google.Protobuf;
+//using System.IO;
+//using SensorData;
 using CsvHelper;
 using System.Globalization; // The generated namespace from your .proto file
 
