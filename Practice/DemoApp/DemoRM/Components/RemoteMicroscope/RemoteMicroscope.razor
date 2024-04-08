@@ -1,0 +1,131 @@
+﻿@page "/remotemicroscope"
+@using Microsoft.Data.Sqlite
+@rendermode InteractiveServer
+
+<PageTitle>RemoteMicroscope</PageTitle>
+
+<link rel="icon" href="favicon.ico" />
+
+Another component to render the specific camera response from the server using a Card.
+
+@* <button class="btn btn-primary" @onclick="CaptureImage">Fetch image</button> *@
+
+@* <img src="@imageByteString" style="width:500px;height:auto;" /> *@
+
+<h3>Remote Hosts:</h3>
+<ul>
+    @foreach (var host in remoteHosts)
+    {
+        <li style="color: @(host.IsActive ? "green" : "grey")">@host.IPAddress
+            <button class="btn btn-danger" @onclick="() => DeleteHost(host)">Delete</button>
+        </li>
+    }
+</ul>
+
+<button class="btn btn-primary" @onclick="AddNewHost">Add New Host</button>
+
+@code {
+    private List<RemoteHost> remoteHosts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        remoteHosts = await LoadRemoteHostsFromDatabase();
+    }
+
+    private async Task<List<RemoteHost>> LoadRemoteHostsFromDatabase()
+    {
+        List<RemoteHost> hosts = new List<RemoteHost>();
+
+        using (var connection = new SqliteConnection("Data Source=RemoteMicroscopes.db"))
+        {
+            connection.Open();
+
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = @"
+                    CREATE TABLE IF NOT EXISTS RemoteMicroscopes (
+                        Id INTEGER PRIMARY KEY,
+                        HostIpAddress TEXT,
+                        Active INTEGER
+                    )";
+                await command.ExecuteNonQueryAsync();
+                Console.WriteLine("Table created");
+            }
+
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = @"
+                    SELECT * FROM RemoteMicroscopes;
+                ";
+                using (var reader = await command.ExecuteReaderAsync())
+                {
+                    while (await reader.ReadAsync())
+                    {
+                        var host = new RemoteHost
+                        {
+                            Id = reader.GetInt32(0),
+                            IPAddress = reader.GetString(1),
+                            IsActive = reader.GetBoolean(2)
+                        };
+                        hosts.Add(host);
+                    }
+                }
+            }
+        }
+
+        return hosts;
+    }
+
+    private async Task AddNewHost()
+    {
+        var ipAddress = "192.168.0.1"; // Replace with the actual IP address input from the UI
+        var isActive = true; // Replace with the actual active value input from the UI
+
+        using (var connection = new SqliteConnection("Data Source=RemoteMicroscopes.db"))
+        {
+            connection.Open();
+
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = @"
+                    INSERT INTO RemoteMicroscopes (HostIpAddress, Active) VALUES ($ipAddress, $isActive);
+                ";
+                command.Parameters.AddWithValue("$ipAddress", ipAddress);
+                command.Parameters.AddWithValue("$isActive", isActive);
+                await command.ExecuteNonQueryAsync();
+                Console.WriteLine("Inserted new host");
+            }
+        }
+
+        remoteHosts = await LoadRemoteHostsFromDatabase();
+    }
+
+    private async Task DeleteHost(RemoteHost host)
+    {
+        using (var connection = new SqliteConnection("Data Source=RemoteMicroscopes.db"))
+        {
+            connection.Open();
+
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = @"
+                    DELETE FROM RemoteMicroscopes WHERE Id = $id;
+                ";
+                command.Parameters.AddWithValue("$id", host.Id);
+                await command.ExecuteNonQueryAsync();
+                Console.WriteLine("Deleted host");
+            }
+        }
+
+        remoteHosts = await LoadRemoteHostsFromDatabase();
+    }
+
+    public class RemoteHost
+    {
+        public int Id { get; set; }
+        public string IPAddress { get; set; }
+        public bool IsActive { get; set; }
+    }
+}
+
+

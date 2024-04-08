@@ -206,4 +206,4 @@ C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\obj\Release\n
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\obj\Release\net7.0\win-x64\ref\CutFileParserCLI.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\CsvHelper.dll
 C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\System.Linq.Async.dll
-C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\mscordaccore_amd64_amd64_7.0.1624.6629.dll
+C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\win-x64\mscordaccore_amd64_amd64_7.0.1724.11508.dll

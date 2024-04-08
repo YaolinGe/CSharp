@@ -1,0 +1,15 @@
+﻿@page "/rm"
+@* @using System.Net *@
+@using RemoteMicroscope.Components;
+@rendermode InteractiveServer
+
+<PageTitle>Remote Microscope</PageTitle>
+
+<button class="btn btn-primary" @onclick="CaptureImage">Fetch data</button>
+
+@* <a href="http://138.103.116.99:5000">Test</a> *@
+
+@* <iframe src="http://localhost:5000" width="1920" height="1080"></iframe> *@
+
+<img src="@imageByteString" style="width:500px;height:auto;" />
+

@@ -14,23 +14,23 @@
 
             List<string> sensors = new List<string>
             {
-                "BobbenAccelerometerX",
-                "BobbenAccelerometerY",
-                //"Box1Accelerometer2GRaw0",
-                //"Box1Accelerometer2GRaw1",
-                //"Box1Accelerometer2GRaw2",
-                //"Box1Accelerometer50GRaw0",
-                //"Box1Accelerometer50GRaw1",
-                //"Box2StrainRaw0",
-                //"Box2StrainRaw1",
-                //"Box3Clock",
-                //"Box1ClockPeripheral",
-                //"Box2ClockPeripheral",
-                //"Deflection",
-                //"Load",
-                //"SurfaceFinish",
-                //"Vibration",
-                //"Temperature"
+                //"BobbenAccelerometerX",
+                //"BobbenAccelerometerY",
+                "Box1Accelerometer2GRaw0",
+                "Box1Accelerometer2GRaw1",
+                "Box1Accelerometer2GRaw2",
+                "Box1Accelerometer50GRaw0",
+                "Box1Accelerometer50GRaw1",
+                "Box2StrainRaw0",
+                "Box2StrainRaw1",
+                "Box3Clock",
+                "Box1ClockPeripheral",
+                "Box2ClockPeripheral",
+                "Deflection",
+                "Load",
+                "SurfaceFinish",
+                "Vibration",
+                "Temperature"
             };
 
             CutFileLoader loader = new CutFileLoader(filePath);

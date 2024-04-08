@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\DemoRM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DemoRM.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DemoRM.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\DemoRM\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\DemoRM\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\DemoRM\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\DemoRM\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\DemoRM\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\DemoRM\\wwwroot\\image.jpg",
+      "PackagePath": "staticwebassets\\image.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DemoRM.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DemoRM.props",
+      "PackagePath": "build\\DemoRM.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DemoRM.props",
+      "PackagePath": "buildMultiTargeting\\DemoRM.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DemoRM.props",
+      "PackagePath": "buildTransitive\\DemoRM.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
