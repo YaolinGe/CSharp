@@ -1,0 +1,29 @@
+﻿@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Web
+
+<div class="card">
+    <img src="" class="card-img-top" alt="Microscope Image">
+    <div class="card-body">
+        <h5 class="card-title">@MicroscopeName</h5>
+        <p class="card-text">IP Address: @IPAddress</p>
+        @if (Active)
+        {
+            <p class="card-text">Status: Active</p>
+        }
+        else
+        {
+            <p class="card-text">Status: Inactive</p>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string IPAddress { get; set; }
+
+    [Parameter]
+    public bool Active { get; set; }
+
+    [Parameter]
+    public string MicroscopeName { get; set; }
+}

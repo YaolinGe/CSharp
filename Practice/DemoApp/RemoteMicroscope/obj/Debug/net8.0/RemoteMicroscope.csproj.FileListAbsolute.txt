@@ -28,3 +28,4 @@ C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\RemoteMicroscope\obj\Debug\net
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\RemoteMicroscope\obj\Debug\net8.0\RemoteMicroscope.pdb
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\RemoteMicroscope\obj\Debug\net8.0\RemoteMicroscope.genruntimeconfig.cache
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\RemoteMicroscope\obj\Debug\net8.0\ref\RemoteMicroscope.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\RemoteMicroscope\obj\Debug\net8.0\scopedcss\Components\Pages\Home.razor.rz.scp.css

@@ -2,7 +2,7 @@
 
 namespace RemoteMicroscope.Components;
 
-public partial class RemoteMicroscope
+public partial class ImageFetcher
 {
     private string imageByteString = "";
 

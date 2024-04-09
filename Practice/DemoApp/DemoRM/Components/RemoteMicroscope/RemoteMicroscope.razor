@@ -1,74 +1,189 @@
 ﻿@page "/remotemicroscope"
 @using Microsoft.Data.Sqlite
+@using DemoRM.Components.RemoteMicroscope
+@using System.Net.Sockets
 @rendermode InteractiveServer
 
 <PageTitle>RemoteMicroscope</PageTitle>
 
 <link rel="icon" href="favicon.ico" />
 
-Another component to render the specific camera response from the server using a Card.
-
-@* <button class="btn btn-primary" @onclick="CaptureImage">Fetch image</button> *@
-
-@* <img src="@imageByteString" style="width:500px;height:auto;" /> *@
+<Microscope IPAddress="138:115:106:98:5000" MicroscopeName="Remote" Active=true />
 
 <h3>Remote Hosts:</h3>
 <ul>
     @foreach (var host in remoteHosts)
     {
-        <li style="color: @(host.IsActive ? "green" : "grey")">@host.IPAddress
+        <li style="color: @(host.IsActive ? "green" : "grey")">
+            @host.IPAddress
             <button class="btn btn-danger" @onclick="() => DeleteHost(host)">Delete</button>
         </li>
     }
 </ul>
 
-<button class="btn btn-primary" @onclick="AddNewHost">Add New Host</button>
+@* <button class="btn btn-primary" @onclick="AddNewHost">Add New Host</button> *@
+
+<button @onclick="PrintHello">Hello</button>
+
+<button class="btn @(isModalOpen ? "active" : "")" @onclick="OpenModal">Open Modal</button>
+
+<div class="modal" style="display: @(isModalOpen ? "block" : "none");">
+    <div class="modal-content">
+        <h2>Remote Microscope Configuration</h2>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" @bind="name" />
+        </div>
+        <div class="form-group">
+            <label for="ipAddress">IP Address:</label>
+            <input type="text" id="ipAddress" @bind="ipAddress" placeholder="e.g. 192.168.0.1 - 192.168.255.255" style="color: grey;" />
+        </div>
+        <div class="form-group">
+            <label for="portNumber">Port Number: e.g. 1 ~ 65535</label>
+            <input type="text" id="portNumber" @bind="portNumber" style="color: grey;" />
+        </div>
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <p class="error-message">@errorMessage</p>
+        }
+        <button class="btn" @onclick="UpdateRemoteMicroscope">Save</button>
+        <button class="btn" @onclick="() => isModalOpen = false">Cancel</button>
+    </div>
+</div>
+
+<div>
+    <h3>Available Hosts:</h3>
+    <div class="card-container">
+        @foreach (var host in availableHosts)
+        {
+            <div class="card">
+                <h4>@host.IPAddress</h4>
+                <p>@host.Name</p>
+            </div>
+        }
+    </div>
+</div>
 
 @code {
+    private string name;
+    private string ipAddress;
+    private int portNumber;
+    private string errorMessage;
+    private bool isModalOpen;
     private List<RemoteHost> remoteHosts;
+    private List<RemoteHost> availableHosts;
+
+    public void PrintHello()
+    {
+        Console.WriteLine("Hello");
+        System.Diagnostics.Debug.WriteLine("Hello");
+    }
+
+    private void OpenModal()
+    {
+        isModalOpen = true;
+        string message = $"IsModalOpen: {isModalOpen}";
+        Console.WriteLine(message);
+    }
+
+    private void UpdateRemoteMicroscope()
+    {
+        if (ValidateIpAddress() && ValidatePortNumber())
+        {
+            string combinedAddress = $"{ipAddress}:{portNumber}";
+            Console.WriteLine($"IpAddress: {combinedAddress}");
+        }
+    }
+
+    private bool ValidateIpAddress()
+    {
+        errorMessage = string.Empty;
+
+        if (string.IsNullOrEmpty(ipAddress))
+        {
+            errorMessage += "IP address is required. ";
+            return false;
+        }
+
+        // Split the IP address into its octets
+        string[] octets = ipAddress.Split('.');
+
+        // Check if the IP address has 4 octets
+        if (octets.Length != 4)
+        {
+            errorMessage += "Invalid IP address format. ";
+            return false;
+        }
+
+        // Check if each octet is a valid number between 0 and 255
+        foreach (string octet in octets)
+        {
+            if (!int.TryParse(octet, out int value) || value < 0 || value > 255)
+            {
+                errorMessage += "Invalid IP address format. ";
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    private bool ValidatePortNumber()
+    {
+        errorMessage = string.Empty;
+
+        if (portNumber < 1 || portNumber > 65535)
+        {
+            errorMessage += "Invalid port number. ";
+            return false;
+        }
+
+        return true;
+    }
 
     protected override async Task OnInitializedAsync()
     {
-        remoteHosts = await LoadRemoteHostsFromDatabase();
+        remoteHosts = await InitializeRemoteHostsDatabase();
+        availableHosts = await ScanAvailableHosts();
     }
 
-    private async Task<List<RemoteHost>> LoadRemoteHostsFromDatabase()
+    private async Task<List<RemoteHost>> InitializeRemoteHostsDatabase()
     {
         List<RemoteHost> hosts = new List<RemoteHost>();
 
-        using (var connection = new SqliteConnection("Data Source=RemoteMicroscopes.db"))
-        {
-            connection.Open();
+        await using var connection = new SqliteConnection("Data Source=Components/RemoteMicroscope/RemoteMicroscopes.db");
+        connection.Open();
 
-            using (var command = connection.CreateCommand())
-            {
-                command.CommandText = @"
+        await using (var command = connection.CreateCommand())
+        {
+            command.CommandText = @"
                     CREATE TABLE IF NOT EXISTS RemoteMicroscopes (
                         Id INTEGER PRIMARY KEY,
                         HostIpAddress TEXT,
-                        Active INTEGER
+                        Active INTEGER,
+                        Name TEXT
                     )";
-                await command.ExecuteNonQueryAsync();
-                Console.WriteLine("Table created");
-            }
+            await command.ExecuteNonQueryAsync();
+            Console.WriteLine("Table created");
+        }
 
-            using (var command = connection.CreateCommand())
-            {
-                command.CommandText = @"
+        await using (var command = connection.CreateCommand())
+        {
+            command.CommandText = @"
                     SELECT * FROM RemoteMicroscopes;
                 ";
-                using (var reader = await command.ExecuteReaderAsync())
+            await using (var reader = await command.ExecuteReaderAsync())
+            {
+                while (await reader.ReadAsync())
                 {
-                    while (await reader.ReadAsync())
-                    {
-                        var host = new RemoteHost
+                    var host = new RemoteHost
                         {
                             Id = reader.GetInt32(0),
                             IPAddress = reader.GetString(1),
-                            IsActive = reader.GetBoolean(2)
+                            IsActive = reader.GetBoolean(2),
+                            Name = reader.GetString(3)
                         };
-                        hosts.Add(host);
-                    }
+                    hosts.Add(host);
                 }
             }
         }
@@ -76,33 +191,38 @@ Another component to render the specific camera response from the server using a
         return hosts;
     }
 
-    private async Task AddNewHost()
+    private async Task<List<RemoteHost>> ScanAvailableHosts()
     {
-        var ipAddress = "192.168.0.1"; // Replace with the actual IP address input from the UI
-        var isActive = true; // Replace with the actual active value input from the UI
-
-        using (var connection = new SqliteConnection("Data Source=RemoteMicroscopes.db"))
+        List<RemoteHost> hosts = new List<RemoteHost>();
+        using (var client = new TcpClient())
         {
-            connection.Open();
-
-            using (var command = connection.CreateCommand())
+            for (int i = 1; i <= 255; i++)
             {
-                command.CommandText = @"
-                    INSERT INTO RemoteMicroscopes (HostIpAddress, Active) VALUES ($ipAddress, $isActive);
-                ";
-                command.Parameters.AddWithValue("$ipAddress", ipAddress);
-                command.Parameters.AddWithValue("$isActive", isActive);
-                await command.ExecuteNonQueryAsync();
-                Console.WriteLine("Inserted new host");
+                string ipAddress = $"138.115.106.{i}";
+                try
+                {
+                    await client.ConnectAsync(ipAddress, 5000);
+                    hosts.Add(new RemoteHost
+                        {
+                            IPAddress = ipAddress,
+                            IsActive = true,
+                            Name = "Unknown"
+                        });
+                    Console.WriteLine($"Host found: {ipAddress}");
+                }
+                catch (Exception)
+                {
+                    // Host is not available or port 5000 is not open
+                }
             }
         }
 
-        remoteHosts = await LoadRemoteHostsFromDatabase();
+        return hosts;
     }
 
     private async Task DeleteHost(RemoteHost host)
     {
-        using (var connection = new SqliteConnection("Data Source=RemoteMicroscopes.db"))
+        using (var connection = new SqliteConnection("Data Source=RemoteMicroscope.db"))
         {
             connection.Open();
 
@@ -117,7 +237,7 @@ Another component to render the specific camera response from the server using a
             }
         }
 
-        remoteHosts = await LoadRemoteHostsFromDatabase();
+        remoteHosts = await InitializeRemoteHostsDatabase();
     }
 
     public class RemoteHost
@@ -125,7 +245,6 @@ Another component to render the specific camera response from the server using a
         public int Id { get; set; }
         public string IPAddress { get; set; }
         public bool IsActive { get; set; }
+        public string Name { get; set; }
     }
 }
-
-

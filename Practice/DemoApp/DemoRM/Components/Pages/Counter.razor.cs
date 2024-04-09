@@ -7,5 +7,7 @@ public partial class Counter
     private void IncrementCount()
     {
         currentCount++;
+        Console.WriteLine("Counter.razor");
+        System.Diagnostics.Debug.WriteLine("Hello");
     }
 }

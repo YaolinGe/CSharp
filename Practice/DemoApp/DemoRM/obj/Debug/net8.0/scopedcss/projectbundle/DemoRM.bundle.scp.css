@@ -201,3 +201,116 @@ main[b-n34w9h35jr] {
         overflow-y: auto;
     }
 }
+/* _content/DemoRM/Components/RemoteMicroscope/FormMicroscope.razor.rz.scp.css */
+/* FormMicroscope.razor.css */
+
+.modal[b-sahaxk20pi] {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal-content[b-sahaxk20pi] {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.form-group[b-sahaxk20pi] {
+  margin-bottom: 20px;
+}
+
+.form-group label[b-sahaxk20pi] {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"][b-sahaxk20pi],
+.form-group input[type="number"][b-sahaxk20pi],
+.form-group textarea[b-sahaxk20pi] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea[b-sahaxk20pi] {
+  height: 100px;
+}
+
+.form-group .error-message[b-sahaxk20pi] {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+/* _content/DemoRM/Components/RemoteMicroscope/RemoteMicroscope.razor.rz.scp.css */
+/* FormMicroscope.razor.css */
+
+.modal[b-wd9htus1az] {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content[b-wd9htus1az] {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.form-group[b-wd9htus1az] {
+  margin-bottom: 20px;
+}
+
+.form-group label[b-wd9htus1az] {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"][b-wd9htus1az],
+.form-group input[type="number"][b-wd9htus1az],
+.form-group textarea[b-wd9htus1az] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea[b-wd9htus1az] {
+  height: 100px;
+}
+
+.form-group .error-message[b-wd9htus1az] {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.error-message[b-wd9htus1az] {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

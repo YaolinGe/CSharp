@@ -1,0 +1,113 @@
+﻿@page "/form"
+@rendermode InteractiveServer 
+
+<h1>Remote Microscope Configuration</h1>
+
+<button @onclick="PrintHello">Hello</button>
+
+<button class="btn @(isModalOpen ? "active" : "")" @onclick="OpenModal">Open Modal</button>
+
+<div class="modal" style="display: @(isModalOpen ? "block" : "none");">
+    <div class="modal-content">
+        <h2>Remote Microscope Configuration</h2>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" @bind="name" />
+        </div>
+        <div class="form-group">
+            <label for="ipAddress">IP Address:</label>
+            <input type="text" id="ipAddress" @bind="ipAddress" placeholder="e.g. 192.168.0.1 - 192.168.255.255" style="color: grey;" />
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <p class="error-message">@errorMessage</p>
+            }
+        </div>
+        <div class="form-group">
+            <label for="portNumber">Port Number: e.g. 0 ~ 65535</label>
+            <input type="text" id="portNumber" @bind="portNumber" style="color: grey;" />
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <p class="error-message">@errorMessage</p>
+            }
+        </div>
+        <button class="btn" @onclick="UpdateRemoteMicroscope">Save</button>
+        <button class="btn" @onclick="() => isModalOpen = false">Cancel</button>
+    </div>
+</div>
+
+@code {
+    private string name;
+    private string ipAddress;
+    private int portNumber;
+    private string errorMessage;
+    private bool isModalOpen;
+
+    public void PrintHello()
+    {
+        Console.WriteLine("Hello");
+        System.Diagnostics.Debug.WriteLine("Hello");
+    }
+
+    private void OpenModal()
+    {
+        isModalOpen = true;
+        string message = $"IsModalOpen: {isModalOpen}";
+        Console.WriteLine(message);
+    }
+
+    private void UpdateRemoteMicroscope()
+    {
+        if (ValidateIpAddress() && ValidatePortNumber())
+        {
+            string combinedAddress = $"{ipAddress}:{portNumber}";
+            Console.WriteLine($"IpAddress: {combinedAddress}");
+        }
+    }
+
+    private bool ValidateIpAddress()
+    {
+        if (string.IsNullOrEmpty(ipAddress))
+        {
+            errorMessage = "IP address is required";
+            return false;
+        }
+
+        // Split the IP address into its octets
+        string[] octets = ipAddress.Split('.');
+
+        // Check if the IP address has 4 octets
+        if (octets.Length != 4)
+        {
+            errorMessage = "Invalid IP address format";
+            return false;
+        }
+
+        // Check if each octet is a valid number between 0 and 255
+        foreach (string octet in octets)
+        {
+            if (!int.TryParse(octet, out int value) || value < 0 || value > 255)
+            {
+                errorMessage = "Invalid IP address format";
+                return false;
+            }
+        }
+
+        // IP address is valid
+        errorMessage = string.Empty;
+        return true;
+    }
+
+    private bool ValidatePortNumber()
+    {
+        if (portNumber < 0 || portNumber > 65535)
+        {
+            errorMessage = "Invalid port number";
+            return false;
+        }
+
+        // Port number is valid
+        errorMessage = string.Empty;
+        return true;
+    }
+}
+

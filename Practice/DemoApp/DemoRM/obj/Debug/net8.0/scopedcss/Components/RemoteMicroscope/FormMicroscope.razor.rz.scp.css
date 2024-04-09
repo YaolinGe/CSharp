@@ -1,0 +1,53 @@
+/* FormMicroscope.razor.css */
+
+.modal[b-sahaxk20pi] {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal-content[b-sahaxk20pi] {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.form-group[b-sahaxk20pi] {
+  margin-bottom: 20px;
+}
+
+.form-group label[b-sahaxk20pi] {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"][b-sahaxk20pi],
+.form-group input[type="number"][b-sahaxk20pi],
+.form-group textarea[b-sahaxk20pi] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea[b-sahaxk20pi] {
+  height: 100px;
+}
+
+.form-group .error-message[b-sahaxk20pi] {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
