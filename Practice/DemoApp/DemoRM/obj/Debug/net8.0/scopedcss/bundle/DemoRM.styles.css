@@ -255,10 +255,13 @@ main[b-n34w9h35jr] {
   font-size: 12px;
   margin-top: 5px;
 }
-/* _content/DemoRM/Components/RemoteMicroscope/RemoteMicroscope.razor.rz.scp.css */
+/* _content/DemoRM/Components/RemoteMicroscope/Microscope.razor.rz.scp.css */
+body[b-nwapuyw8qk] {
+}
+/* _content/DemoRM/Components/RemoteMicroscope/RemoteMicroscopeUI.razor.rz.scp.css */
 /* FormMicroscope.razor.css */
 
-.modal[b-wd9htus1az] {
+.modal[b-vfxi9sztw5] {
   display: none;
   position: fixed;
   z-index: 1;
@@ -270,7 +273,7 @@ main[b-n34w9h35jr] {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content[b-wd9htus1az] {
+.modal-content[b-vfxi9sztw5] {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
@@ -279,19 +282,19 @@ main[b-n34w9h35jr] {
   max-width: 600px;
 }
 
-.form-group[b-wd9htus1az] {
+.form-group[b-vfxi9sztw5] {
   margin-bottom: 20px;
 }
 
-.form-group label[b-wd9htus1az] {
+.form-group label[b-vfxi9sztw5] {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.form-group input[type="text"][b-wd9htus1az],
-.form-group input[type="number"][b-wd9htus1az],
-.form-group textarea[b-wd9htus1az] {
+.form-group input[type="text"][b-vfxi9sztw5],
+.form-group input[type="number"][b-vfxi9sztw5],
+.form-group textarea[b-vfxi9sztw5] {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -299,17 +302,17 @@ main[b-n34w9h35jr] {
   box-sizing: border-box;
 }
 
-.form-group textarea[b-wd9htus1az] {
+.form-group textarea[b-vfxi9sztw5] {
   height: 100px;
 }
 
-.form-group .error-message[b-wd9htus1az] {
+.form-group .error-message[b-vfxi9sztw5] {
   color: red;
   font-size: 12px;
   margin-top: 5px;
 }
 
-.error-message[b-wd9htus1az] {
+.error-message[b-vfxi9sztw5] {
   color: red;
   font-size: 12px;
   margin-top: 5px;
