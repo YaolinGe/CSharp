@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+dVhjHKI1RPVNl5Gjhxbewv1FW+dv1curF/ISV7kDPSuWx7KEKsgndBztPhHrvDYk8BNL9ndtx28JHXK5wPrSg==",
+  "dgSpecHash": "b3xmYid46pVFeKG0A0nC1mBhCD/aHnwKL9rht2H+JP0KHA2LsjgyNemkBAYtTC7M4BPFKMWvOT81N+0DLL2xHQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\CutFileParserCLI\\CutFileParserCLI\\CutFileParserCLI.csproj",
   "expectedPackageFiles": [
@@ -15,10 +15,10 @@
     "C:\\Users\\nq9093\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\system.linq.async\\4.0.0\\system.linq.async.4.0.0.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
-    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.18\\microsoft.netcore.app.host.win-x64.7.0.18.nupkg.sha512"
   ],
   "logs": []
 }

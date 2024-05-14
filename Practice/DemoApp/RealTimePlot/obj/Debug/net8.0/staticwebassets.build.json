@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1KH7kgmVJ4rh/wAmdFRybweH4oj/SSTNd9X2Pj4W3RI=",
+  "Hash": "Qm9FnG69jPYOhh14nxWxbuuQ/ExaB7Xns3l2T1I64w4=",
   "Source": "RealTimePlot",
   "BasePath": "_content/RealTimePlot",
   "Mode": "Default",
@@ -186,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\RealTimePlot\\wwwroot\\scripts\\components\\TimeDisplay.js",
+      "SourceId": "RealTimePlot",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\RealTimePlot\\wwwroot\\",
+      "BasePath": "_content/RealTimePlot",
+      "RelativePath": "scripts/components/TimeDisplay.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\components\\TimeDisplay.js"
     }
   ]
 }

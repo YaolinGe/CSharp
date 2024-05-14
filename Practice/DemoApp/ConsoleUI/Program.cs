@@ -26,7 +26,7 @@ class Program
                 Name = "Bamm-Bamm"
             }
         };
-        parent.ChildTwo = fred.ChildOne; 
+        parent.ChildTwo = fred.ChildOne;
     }
 
     static void Run()
@@ -42,7 +42,7 @@ class Program
         Console.WriteLine("Leaving 'ShortLives'...");
 
         GC.Collect();
-        GC.WaitForPendingFinalizers(); 
+        GC.WaitForPendingFinalizers();
     }
 
     static void Main()

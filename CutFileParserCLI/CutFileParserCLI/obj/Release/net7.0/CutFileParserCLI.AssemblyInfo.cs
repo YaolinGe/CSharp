@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CutFileParserCLI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9196403ebabde447dd018c1e606c17905724f05")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d9d432ab8d057da20d25e9ec3b6749cda222af4")]
 [assembly: System.Reflection.AssemblyProductAttribute("CutFileParserCLI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CutFileParserCLI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

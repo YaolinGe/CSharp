@@ -1,3 +1,11 @@
+# Language syntax
+- `System.Console.WriteLine()` default calls `ToString` method of that object to get a string representation of that object.
+- `value type` stored on the stack and fixed memory size
+  - `Primitive types (int, float, double, bool, char)`
+  - `Struct` user-defined
+  - `Enumeration` defined using `enum` method
+- `reference type` stored on the heap
+
 # C# notes
 - `IProductModel` inside each interface, everything has to be public, thus no need to add public in the front of each item.
 - interface is like a contract and it has everything declared public to all so that everyone knows what exists in the contract and easy to switch later. I cannot have private method in interface.

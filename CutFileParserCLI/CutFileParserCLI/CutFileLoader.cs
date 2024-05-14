@@ -22,7 +22,7 @@ namespace CutFileParser
             _fileLoaded = await CutFileOperations.ReadAllFromFileAsync(filePath);
         }
 
-        public async Task<List<KeyValuePair<TimeSpan, double>>> GetSensorData(string sensorName)
+        public async Task<List<KeyValuePair<TimeSpan, double>>> GetSensorDataAsync(string sensorName)
         {
             var dataDescription = _fileLoaded.DataDescriptions.FirstOrDefault(d => d.Description == sensorName);
             if (dataDescription is null)
@@ -34,9 +34,22 @@ namespace CutFileParser
             return data.Values.ToList();
         }
 
+        //public async Task DuplicateCutFileAsync(string newFilePath)
+        //{
+        //    _fileLoaded.Id = Guid.NewGuid();
+        //    _fileLoaded.FilePath = newFilePath;
+        //    var dataSeries = await GetSensorDataAsync("Load");
+        //    _fileLoaded.DataSeries.Add(new DataSeries
+        //    {
+        //        DataDescription = new DataDescription { Description = "Load" },
+        //        Values = { dataSeries.Select(kv => new DataPoint { Time = kv.Key, Value = kv.Value }) }
+        //    });
+        //    await _fileLoaded.SaveAsync();
+        //}
+
         public async Task SaveSensorDataToCSV(string filePath, string sensorName)
         {
-            List<KeyValuePair<TimeSpan, double>> data = await GetSensorData(sensorName);
+            List<KeyValuePair<TimeSpan, double>> data = await GetSensorDataAsync(sensorName);
             string tempPath = Path.GetTempPath();
             string subfolder = "CutFileParser";
             Directory.CreateDirectory(Path.Combine(tempPath, subfolder));
@@ -67,5 +80,7 @@ namespace CutFileParser
         //        Console.WriteLine("Sensor data has been saved to 'sensor_data.protobuf'");
         //    }
         //}
+
+
     }
 }

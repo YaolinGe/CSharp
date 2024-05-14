@@ -8,10 +8,15 @@
 
   <ItemGroup>
     <None Remove="Components\Pages\JS.razor.js" />
+    <None Remove="Components\Pages\TimeDisplay.js" />
     <None Remove="test2.js" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Components\Pages\TimeDisplay.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Include="test2.js">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>

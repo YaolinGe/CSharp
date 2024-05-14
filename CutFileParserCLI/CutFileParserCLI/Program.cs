@@ -37,10 +37,12 @@
 
             // Save sensor data to a Protobuf file
             //await loader.SaveSensorDataToProtobuf(filePath, sensorName);
-            foreach (string sensorName in sensors)
-            {
-                await loader.SaveSensorDataToCSV(filePath, sensorName);
-            }
+            //foreach (string sensorName in sensors)
+            //{
+            //    await loader.SaveSensorDataToCSV(filePath, sensorName);
+            //}
+
+            await loader.DuplicateCutFileAsync(@"C:\Users\nq9093\AppData\Local\SensorizedTools\data\CoroPlus_230912-125304_1.cut");
         }
     }
 }
