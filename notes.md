@@ -5,6 +5,8 @@
   - `Struct` user-defined
   - `Enumeration` defined using `enum` method
 - `reference type` stored on the heap
+- `///` is used to create XML documentation comments. 
+- `/// <inheritdoc />` is used to inherit the documentation from the base class or interface.
 
 # C# notes
 - `IProductModel` inside each interface, everything has to be public, thus no need to add public in the front of each item.
