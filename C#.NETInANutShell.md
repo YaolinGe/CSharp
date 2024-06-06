@@ -10,7 +10,7 @@
 - `@""` can include `""` inside verbatim expression in the string literal.
 - `Index first = 0; Index last = ^1;` to indicate the indices for an array.
 - `Range firstTwoRange = 0..2` to add indices for a range.
--
+- `ref`can be useful for performance gains as it does not copy the whole value type. Instead, it only copies the reference to that value type.
 
 - `dynamic` can be used to use dynamic typing in C#, but it is not recommended to use it as it can lead to runtime errors.
 - `ildasm` tool can be used to convert IL back to C#, some examples such as `ILSpy` and JetBrains `dot-Peek` are useful tools.
@@ -19,4 +19,4 @@
 - `F#` might be better for data processing, and `C#` might be better for GUI and web applications.
 
 
-Page 64
+Page 89
