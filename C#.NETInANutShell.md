@@ -19,4 +19,4 @@
 - `F#` might be better for data processing, and `C#` might be better for GUI and web applications.
 
 
-Page 149, Ch 4 advanced concept
+Page 159, Ch 4 Event
