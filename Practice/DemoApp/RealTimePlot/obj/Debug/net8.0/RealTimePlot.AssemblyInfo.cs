@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RealTimePlot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d9d432ab8d057da20d25e9ec3b6749cda222af4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e749e8dd62fdd2662004d5d53e46a51a09c2d963")]
 [assembly: System.Reflection.AssemblyProductAttribute("RealTimePlot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RealTimePlot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
