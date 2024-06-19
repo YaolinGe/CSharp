@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "CUgdQuTdVOYJT/NczewFtRUo0sA2v66zJ63K86AprVqt1GgfMT9dBmcaYR54YVZqb051QHiaja5m9q8OqABMLw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\DataVisualization\\DataVisualization.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.0-preview.5.24306.7\\microsoft.win32.systemevents.9.0.0-preview.5.24306.7.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\system.drawing.common\\9.0.0-preview.5.24306.5\\system.drawing.common.9.0.0-preview.5.24306.5.nupkg.sha512"
+  ],
+  "logs": []
+}
