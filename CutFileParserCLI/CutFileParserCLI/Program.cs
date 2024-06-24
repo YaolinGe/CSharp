@@ -42,7 +42,7 @@
             //    await loader.SaveSensorDataToCSV(filePath, sensorName);
             //}
 
-            await loader.DuplicateCutFileAsync(@"C:\Users\nq9093\AppData\Local\SensorizedTools\data\CoroPlus_230912-125304_1.cut");
+            //await loader.DuplicateCutFileAsync(@"C:\Users\nq9093\AppData\Local\SensorizedTools\data\CoroPlus_230912-125304_1.cut");
         }
     }
 }
