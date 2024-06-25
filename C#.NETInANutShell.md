@@ -17,6 +17,7 @@
 - `unsafe` marks the block that pointers and explicit memory allocation are used. Most of pointer tasks are automatically done by C#, so the programmers do not need to use pointers in most of cases.
 - `return 0; ` often means no error, where return other number often means something is wrong with the system.
 - `F#` might be better for data processing, and `C#` might be better for GUI and web applications.
+- `IndexOf` and `LastIndexOf` can be used to query the first occurrence of a desired letter or char.
 
 
-Page 231, Ch5 framework
+Page 248, Ch6 String 
