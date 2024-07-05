@@ -18,6 +18,6 @@
 - `return 0; ` often means no error, where return other number often means something is wrong with the system.
 - `F#` might be better for data processing, and `C#` might be better for GUI and web applications.
 - `IndexOf` and `LastIndexOf` can be used to query the first occurrence of a desired letter or char.
+- `thread.Join()` is used to wait for the other thread being finished first before proceeding. 
 
-
-Page 248, Ch6 String 
+Page 248, Ch6 String
