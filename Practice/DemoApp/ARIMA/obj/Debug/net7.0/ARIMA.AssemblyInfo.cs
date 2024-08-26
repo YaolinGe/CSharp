@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ARIMA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e749e8dd62fdd2662004d5d53e46a51a09c2d963")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc5ed6ddc97ccb238a217ae6f121a62475abe623")]
 [assembly: System.Reflection.AssemblyProductAttribute("ARIMA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ARIMA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
