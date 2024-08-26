@@ -1,0 +1,15 @@
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\bin\Debug\net8.0\EventHandler.exe
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\bin\Debug\net8.0\EventHandler.deps.json
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\bin\Debug\net8.0\EventHandler.runtimeconfig.json
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\bin\Debug\net8.0\EventHandler.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\bin\Debug\net8.0\EventHandler.pdb
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\obj\Debug\net8.0\EventHandler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\obj\Debug\net8.0\EventHandler.AssemblyInfoInputs.cache
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\obj\Debug\net8.0\EventHandler.AssemblyInfo.cs
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\obj\Debug\net8.0\EventHandler.csproj.CoreCompileInputs.cache
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\obj\Debug\net8.0\EventHandler.sourcelink.json
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\obj\Debug\net8.0\EventHandler.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\obj\Debug\net8.0\refint\EventHandler.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\obj\Debug\net8.0\EventHandler.pdb
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\obj\Debug\net8.0\EventHandler.genruntimeconfig.cache
+C:\Users\nq9093\CodeSpace\CSharp\Practice\EventHandler\obj\Debug\net8.0\ref\EventHandler.dll

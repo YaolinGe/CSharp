@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealTimePlot", "RealTimePlo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{9C98C056-C416-4538-B13E-DFCF34F795AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataVisualization", "DataVisualization\DataVisualization.csproj", "{8C8A83C4-814D-4BF6-9506-E0E0EF9F2686}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataVisualization", "DataVisualization\DataVisualization.csproj", "{8C8A83C4-814D-4BF6-9506-E0E0EF9F2686}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProcessing", "DataProcessing\DataProcessing.csproj", "{8EAD1214-0144-4C91-8859-956A48FB526B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{8C8A83C4-814D-4BF6-9506-E0E0EF9F2686}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C8A83C4-814D-4BF6-9506-E0E0EF9F2686}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C8A83C4-814D-4BF6-9506-E0E0EF9F2686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EAD1214-0144-4C91-8859-956A48FB526B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EAD1214-0144-4C91-8859-956A48FB526B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EAD1214-0144-4C91-8859-956A48FB526B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EAD1214-0144-4C91-8859-956A48FB526B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
