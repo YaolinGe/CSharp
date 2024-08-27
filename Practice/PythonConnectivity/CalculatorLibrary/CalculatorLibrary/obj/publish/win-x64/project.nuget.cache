@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "Xv6HHIcZyJ/c/GMQHaHxJDQPdXX+BJci/Rgnhilpf2r9f+yXrdfnNnLZw5gqFsJxW693AGq9nq5leDCN/CAFyw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\PythonConnectivity\\CalculatorLibrary\\CalculatorLibrary\\CalculatorLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\7.0.14\\microsoft.extensions.localization.abstractions.7.0.14.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\nuget.versioning\\6.8.0\\nuget.versioning.6.8.0.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\protobuf-net\\3.2.30\\protobuf-net.3.2.30.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\protobuf-net.core\\3.2.30\\protobuf-net.core.3.2.30.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\sandvik.coromant.common\\1.1.1-20240108.002-master\\sandvik.coromant.common.1.1.1-20240108.002-master.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\sandvik.coromant.common.blob\\1.0.16-20240108.003-master\\sandvik.coromant.common.blob.1.0.16-20240108.003-master.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\sandvik.coromant.coroplus.tooling.datamodel\\1.0.7-20240108.001-multi-tool-bobben\\sandvik.coromant.coroplus.tooling.datamodel.1.0.7-20240108.001-multi-tool-bobben.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.14\\microsoft.netcore.app.runtime.win-x64.7.0.14.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.14\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.14.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.14\\microsoft.aspnetcore.app.runtime.win-x64.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

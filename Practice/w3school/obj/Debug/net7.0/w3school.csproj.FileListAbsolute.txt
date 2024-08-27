@@ -1,0 +1,14 @@
+C:\Users\nq9093\CodeSpace\CSharp\Practice\w3school\bin\Debug\net7.0\w3school.exe
+C:\Users\nq9093\CodeSpace\CSharp\Practice\w3school\bin\Debug\net7.0\w3school.deps.json
+C:\Users\nq9093\CodeSpace\CSharp\Practice\w3school\bin\Debug\net7.0\w3school.runtimeconfig.json
+C:\Users\nq9093\CodeSpace\CSharp\Practice\w3school\bin\Debug\net7.0\w3school.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\w3school\bin\Debug\net7.0\w3school.pdb
+C:\Users\nq9093\CodeSpace\CSharp\Practice\w3school\obj\Debug\net7.0\w3school.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nq9093\CodeSpace\CSharp\Practice\w3school\obj\Debug\net7.0\w3school.AssemblyInfoInputs.cache
+C:\Users\nq9093\CodeSpace\CSharp\Practice\w3school\obj\Debug\net7.0\w3school.AssemblyInfo.cs
+C:\Users\nq9093\CodeSpace\CSharp\Practice\w3school\obj\Debug\net7.0\w3school.csproj.CoreCompileInputs.cache
+C:\Users\nq9093\CodeSpace\CSharp\Practice\w3school\obj\Debug\net7.0\w3school.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\w3school\obj\Debug\net7.0\refint\w3school.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\w3school\obj\Debug\net7.0\w3school.pdb
+C:\Users\nq9093\CodeSpace\CSharp\Practice\w3school\obj\Debug\net7.0\w3school.genruntimeconfig.cache
+C:\Users\nq9093\CodeSpace\CSharp\Practice\w3school\obj\Debug\net7.0\ref\w3school.dll

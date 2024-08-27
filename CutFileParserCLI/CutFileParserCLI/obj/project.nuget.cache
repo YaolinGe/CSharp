@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "287N1MvS238gzAJWyxH4ql0/Cz29wXKeM0Ngo5SensRcNlUChjNKBh07XNOEXAY4SJzD7Y6GD4jxHaPu3Pu7IQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\CutFileParserCLI\\CutFileParserCLI\\CutFileParserCLI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nq9093\\.nuget\\packages\\csvhelper\\30.1.0\\csvhelper.30.1.0.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\7.0.14\\microsoft.extensions.localization.abstractions.7.0.14.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\nuget.versioning\\6.8.0\\nuget.versioning.6.8.0.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\protobuf-net\\3.2.30\\protobuf-net.3.2.30.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\protobuf-net.core\\3.2.30\\protobuf-net.core.3.2.30.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\sandvik.coromant.common\\1.1.1-20240108.002-master\\sandvik.coromant.common.1.1.1-20240108.002-master.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\sandvik.coromant.common.blob\\1.0.16-20240108.003-master\\sandvik.coromant.common.blob.1.0.16-20240108.003-master.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\sandvik.coromant.coroplus.tooling.datamodel\\1.0.7-20240108.001-multi-tool-bobben\\sandvik.coromant.coroplus.tooling.datamodel.1.0.7-20240108.001-multi-tool-bobben.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\system.linq.async\\4.0.0\\system.linq.async.4.0.0.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,391 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Microsoft.Extensions.Localization.Abstractions/8.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NuGet.Versioning/6.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NuGet.Versioning.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NuGet.Versioning.dll": {}
+        }
+      },
+      "protobuf-net/3.2.30": {
+        "type": "package",
+        "dependencies": {
+          "protobuf-net.Core": "3.2.30"
+        },
+        "compile": {
+          "lib/net6.0/protobuf-net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/protobuf-net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "protobuf-net.Core/3.2.30": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "7.0.0"
+        },
+        "compile": {
+          "lib/net6.0/protobuf-net.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/protobuf-net.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sandvik.Coromant.Common/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Localization.Abstractions": "8.0.1",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Sandvik.Coromant.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Sandvik.Coromant.Common.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sandvik.Coromant.Common.Blob/1.0.16": {
+        "type": "package",
+        "dependencies": {
+          "Sandvik.Coromant.Common": "1.2.0",
+          "protobuf-net": "3.2.30"
+        },
+        "compile": {
+          "lib/net8.0/Sandvik.Coromant.Common.Blob.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Sandvik.Coromant.Common.Blob.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sandvik.Coromant.CoroPlus.Tooling.DataModel/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Versioning": "6.8.0",
+          "Sandvik.Coromant.Common.Blob": "1.0.16"
+        },
+        "compile": {
+          "lib/net8.0/Sandvik.Coromant.CoroPlus.Tooling.DataModel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Sandvik.Coromant.CoroPlus.Tooling.DataModel.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Collections.Immutable/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.Localization.Abstractions/8.0.1": {
+      "sha512": "6I7L2lNIziR93fjxecmeXi/dTnsGc7zHp+zXIywA01wzy769o11Ba6IDmese3MLXYBohiWf5X/dhT04AeouSHA==",
+      "type": "package",
+      "path": "microsoft.extensions.localization.abstractions/8.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.Extensions.Localization.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.Localization.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.Localization.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.Localization.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.xml",
+        "microsoft.extensions.localization.abstractions.8.0.1.nupkg.sha512",
+        "microsoft.extensions.localization.abstractions.nuspec"
+      ]
+    },
+    "NuGet.Versioning/6.8.0": {
+      "sha512": "WBu15cdv1lqKkPKXDQOEmEzwKemwrczKYlc2jtuZgRYiZ8TG8F4QzPYiE0Q9eVIpMSk8Aky7mUephf19HjBPOw==",
+      "type": "package",
+      "path": "nuget.versioning/6.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net472/NuGet.Versioning.dll",
+        "lib/netstandard2.0/NuGet.Versioning.dll",
+        "nuget.versioning.6.8.0.nupkg.sha512",
+        "nuget.versioning.nuspec"
+      ]
+    },
+    "protobuf-net/3.2.30": {
+      "sha512": "C/UTlmxEJHAHpqm8xQK1UyJKaIynVCSNG4mVrbLgnZ7ccH28nN49O8iMJvKEodTgVbnimvy+3mIiAdW6mATwnw==",
+      "type": "package",
+      "path": "protobuf-net/3.2.30",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/protobuf-net.dll",
+        "lib/net462/protobuf-net.xml",
+        "lib/net6.0/protobuf-net.dll",
+        "lib/net6.0/protobuf-net.xml",
+        "lib/netstandard2.0/protobuf-net.dll",
+        "lib/netstandard2.0/protobuf-net.xml",
+        "lib/netstandard2.1/protobuf-net.dll",
+        "lib/netstandard2.1/protobuf-net.xml",
+        "protobuf-net.3.2.30.nupkg.sha512",
+        "protobuf-net.nuspec",
+        "protobuf-net.png"
+      ]
+    },
+    "protobuf-net.Core/3.2.30": {
+      "sha512": "v2ZxxYrz+X212ukSx+uqkLuPu414bvmSAnTyf+PBUKR9ENJxO4P/csorA/27456MCp1JNoMssDj/f91RDiwBfQ==",
+      "type": "package",
+      "path": "protobuf-net.core/3.2.30",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/protobuf-net.Core.dll",
+        "lib/net462/protobuf-net.Core.xml",
+        "lib/net6.0/protobuf-net.Core.dll",
+        "lib/net6.0/protobuf-net.Core.xml",
+        "lib/netstandard2.0/protobuf-net.Core.dll",
+        "lib/netstandard2.0/protobuf-net.Core.xml",
+        "lib/netstandard2.1/protobuf-net.Core.dll",
+        "lib/netstandard2.1/protobuf-net.Core.xml",
+        "protobuf-net.core.3.2.30.nupkg.sha512",
+        "protobuf-net.core.nuspec",
+        "protobuf-net.png"
+      ]
+    },
+    "Sandvik.Coromant.Common/1.2.0": {
+      "sha512": "saYX3Fvl2BIhomuXF2I3h1fqgq11d5v/daUz4K/S8bw6h6XG1g36bSWfR3y+mTVk4xK6Q1qS5xj+RHrJLkgEkw==",
+      "type": "package",
+      "path": "sandvik.coromant.common/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        "icon.png",
+        "lib/net8.0/Sandvik.Coromant.Common.dll",
+        "lib/net8.0/Sandvik.Coromant.Common.xml",
+        "sandvik.coromant.common.1.2.0.nupkg.sha512",
+        "sandvik.coromant.common.nuspec"
+      ]
+    },
+    "Sandvik.Coromant.Common.Blob/1.0.16": {
+      "sha512": "AMWAoxoUBzJzdLBHC1YOEQf9/9a94oyiPHQPNNv+6IcDSHH7v0m8z9Y/pDdVkY9ivMw5B957SPyRvl96WvVnyQ==",
+      "type": "package",
+      "path": "sandvik.coromant.common.blob/1.0.16",
+      "files": [
+        ".nupkg.metadata",
+        "icon.png",
+        "lib/net8.0/Sandvik.Coromant.Common.Blob.dll",
+        "lib/net8.0/Sandvik.Coromant.Common.Blob.xml",
+        "sandvik.coromant.common.blob.1.0.16.nupkg.sha512",
+        "sandvik.coromant.common.blob.nuspec"
+      ]
+    },
+    "Sandvik.Coromant.CoroPlus.Tooling.DataModel/1.1.0": {
+      "sha512": "EaOI8P4rpGiIqoPLuSGh4vNUm6qpw82IPgsG4tR7LCzKaAZj1b7GFqQUHjfb6fGTqX+YfYb8lAZI58CTIwB7TA==",
+      "type": "package",
+      "path": "sandvik.coromant.coroplus.tooling.datamodel/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        "icon.png",
+        "lib/net8.0/Sandvik.Coromant.CoroPlus.Tooling.DataModel.dll",
+        "lib/net8.0/Sandvik.Coromant.CoroPlus.Tooling.DataModel.xml",
+        "sandvik.coromant.coroplus.tooling.datamodel.1.1.0.nupkg.sha512",
+        "sandvik.coromant.coroplus.tooling.datamodel.nuspec"
+      ]
+    },
+    "System.Collections.Immutable/7.0.0": {
+      "sha512": "dQPcs0U1IKnBdRDBkrCTi1FoajSTBzLcVTpjO4MBCMC7f4pDOIPzgBoX8JjG7X6uZRJ8EBxsi8+DR1JuwjnzOQ==",
+      "type": "package",
+      "path": "system.collections.immutable/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "README.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Collections.Immutable.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Collections.Immutable.targets",
+        "lib/net462/System.Collections.Immutable.dll",
+        "lib/net462/System.Collections.Immutable.xml",
+        "lib/net6.0/System.Collections.Immutable.dll",
+        "lib/net6.0/System.Collections.Immutable.xml",
+        "lib/net7.0/System.Collections.Immutable.dll",
+        "lib/net7.0/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
+        "system.collections.immutable.7.0.0.nupkg.sha512",
+        "system.collections.immutable.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Reactive/6.0.0": {
+      "sha512": "31kfaW4ZupZzPsI5PVe77VhnvFF55qgma7KZr/E0iFTs6fmdhhG8j0mgEx620iLTey1EynOkEfnyTjtNEpJzGw==",
+      "type": "package",
+      "path": "system.reactive/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net6.0-windows10.0.19041/_._",
+        "build/net6.0/_._",
+        "buildTransitive/net6.0-windows10.0.19041/_._",
+        "buildTransitive/net6.0/_._",
+        "icon.png",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net6.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net6.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net6.0/System.Reactive.dll",
+        "lib/net6.0/System.Reactive.xml",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.18362/System.Reactive.dll",
+        "lib/uap10.0.18362/System.Reactive.pri",
+        "lib/uap10.0.18362/System.Reactive.xml",
+        "readme.md",
+        "system.reactive.6.0.0.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Sandvik.Coromant.CoroPlus.Tooling.DataModel >= 1.1.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\nq9093\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\CutFileParserCLI\\SensorDataScanner\\SensorDataScanner.csproj",
+      "projectName": "SensorDataScanner",
+      "projectPath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\CutFileParserCLI\\SensorDataScanner\\SensorDataScanner.csproj",
+      "packagesPath": "C:\\Users\\nq9093\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\CutFileParserCLI\\SensorDataScanner\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\nq9093\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/silenttools/_packaging/CoroPlusDev/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Sandvik.Coromant.CoroPlus.Tooling.DataModel": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.107/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

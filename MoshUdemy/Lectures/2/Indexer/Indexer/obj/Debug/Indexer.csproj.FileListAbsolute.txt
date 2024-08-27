@@ -1,0 +1,7 @@
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Indexer\Indexer\bin\Debug\Indexer.exe.config
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Indexer\Indexer\bin\Debug\Indexer.exe
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Indexer\Indexer\bin\Debug\Indexer.pdb
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Indexer\Indexer\obj\Debug\Indexer.csproj.AssemblyReference.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Indexer\Indexer\obj\Debug\Indexer.csproj.CoreCompileInputs.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Indexer\Indexer\obj\Debug\Indexer.exe
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Indexer\Indexer\obj\Debug\Indexer.pdb

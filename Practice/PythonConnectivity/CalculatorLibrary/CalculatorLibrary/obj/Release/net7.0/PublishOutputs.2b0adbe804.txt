@@ -1,0 +1,11 @@
+C:\Users\nq9093\CodeSpace\CSharp\Practice\PythonConnectivity\CalculatorLibrary\CalculatorLibrary\bin\Release\net7.0\publish\CalculatorLibrary.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\PythonConnectivity\CalculatorLibrary\CalculatorLibrary\bin\Release\net7.0\publish\CalculatorLibrary.deps.json
+C:\Users\nq9093\CodeSpace\CSharp\Practice\PythonConnectivity\CalculatorLibrary\CalculatorLibrary\bin\Release\net7.0\publish\CalculatorLibrary.pdb
+C:\Users\nq9093\CodeSpace\CSharp\Practice\PythonConnectivity\CalculatorLibrary\CalculatorLibrary\bin\Release\net7.0\publish\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\PythonConnectivity\CalculatorLibrary\CalculatorLibrary\bin\Release\net7.0\publish\NuGet.Versioning.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\PythonConnectivity\CalculatorLibrary\CalculatorLibrary\bin\Release\net7.0\publish\protobuf-net.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\PythonConnectivity\CalculatorLibrary\CalculatorLibrary\bin\Release\net7.0\publish\protobuf-net.Core.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\PythonConnectivity\CalculatorLibrary\CalculatorLibrary\bin\Release\net7.0\publish\Sandvik.Coromant.Common.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\PythonConnectivity\CalculatorLibrary\CalculatorLibrary\bin\Release\net7.0\publish\Sandvik.Coromant.Common.Blob.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\PythonConnectivity\CalculatorLibrary\CalculatorLibrary\bin\Release\net7.0\publish\Sandvik.Coromant.CoroPlus.Tooling.DataModel.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\PythonConnectivity\CalculatorLibrary\CalculatorLibrary\bin\Release\net7.0\publish\System.Reactive.dll

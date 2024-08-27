@@ -1,0 +1,7 @@
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\L6\L6\bin\Debug\L6.exe.config
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\L6\L6\bin\Debug\L6.exe
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\L6\L6\bin\Debug\L6.pdb
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\L6\L6\obj\Debug\L6.csproj.AssemblyReference.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\L6\L6\obj\Debug\L6.csproj.CoreCompileInputs.cache
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\L6\L6\obj\Debug\L6.exe
+C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\L6\L6\obj\Debug\L6.pdb
