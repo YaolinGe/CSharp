@@ -1,7 +1,0 @@
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\DesignAStack\DesignAStack\bin\Debug\DesignAStack.exe.config
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\DesignAStack\DesignAStack\bin\Debug\DesignAStack.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\DesignAStack\DesignAStack\bin\Debug\DesignAStack.pdb
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\DesignAStack\DesignAStack\obj\Debug\DesignAStack.csproj.AssemblyReference.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\DesignAStack\DesignAStack\obj\Debug\DesignAStack.csproj.CoreCompileInputs.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\DesignAStack\DesignAStack\obj\Debug\DesignAStack.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\DesignAStack\DesignAStack\obj\Debug\DesignAStack.pdb

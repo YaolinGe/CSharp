@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "CutFileParserCLI": {
-      "commandName": "Project",
-      "commandLineArgs": "\"C:\\Users\\nq9093\\AppData\\Local\\SensorizedTools\\data\\CoroPlus_230912-125304.cut\""
-    }
-  }
-}

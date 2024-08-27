@@ -1,7 +1,0 @@
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W8\w8\w8\bin\Debug\w8.exe.config
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W8\w8\w8\bin\Debug\w8.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W8\w8\w8\bin\Debug\w8.pdb
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W8\w8\w8\obj\Debug\w8.csproj.AssemblyReference.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W8\w8\w8\obj\Debug\w8.csproj.CoreCompileInputs.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W8\w8\w8\obj\Debug\w8.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W8\w8\w8\obj\Debug\w8.pdb

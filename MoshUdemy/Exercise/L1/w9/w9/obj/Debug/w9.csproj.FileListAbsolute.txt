@@ -1,7 +1,0 @@
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\w9\w9\bin\Debug\w9.exe.config
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\w9\w9\bin\Debug\w9.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\w9\w9\bin\Debug\w9.pdb
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\w9\w9\obj\Debug\w9.csproj.AssemblyReference.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\w9\w9\obj\Debug\w9.csproj.CoreCompileInputs.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\w9\w9\obj\Debug\w9.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\w9\w9\obj\Debug\w9.pdb

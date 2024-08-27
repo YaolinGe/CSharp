@@ -1,7 +1,0 @@
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\StopWatch\StopWatch\bin\Debug\StopWatch.exe.config
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\StopWatch\StopWatch\bin\Debug\StopWatch.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\StopWatch\StopWatch\bin\Debug\StopWatch.pdb
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\StopWatch\StopWatch\obj\Debug\StopWatch.csproj.AssemblyReference.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\StopWatch\StopWatch\obj\Debug\StopWatch.csproj.CoreCompileInputs.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\StopWatch\StopWatch\obj\Debug\StopWatch.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\L2\StopWatch\StopWatch\obj\Debug\StopWatch.pdb

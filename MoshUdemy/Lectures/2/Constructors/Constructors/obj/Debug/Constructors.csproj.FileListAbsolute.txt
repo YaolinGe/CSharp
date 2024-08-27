@@ -1,7 +1,0 @@
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Constructors\Constructors\bin\Debug\Constructors.exe.config
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Constructors\Constructors\bin\Debug\Constructors.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Constructors\Constructors\bin\Debug\Constructors.pdb
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Constructors\Constructors\obj\Debug\Constructors.csproj.AssemblyReference.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Constructors\Constructors\obj\Debug\Constructors.csproj.CoreCompileInputs.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Constructors\Constructors\obj\Debug\Constructors.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Constructors\Constructors\obj\Debug\Constructors.pdb

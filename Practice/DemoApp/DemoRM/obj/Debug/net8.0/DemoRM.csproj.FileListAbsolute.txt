@@ -1,7 +1,0 @@
-C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DemoRM\obj\Debug\net8.0\DemoRM.csproj.AssemblyReference.cache
-C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DemoRM\obj\Debug\net8.0\DemoRM.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DemoRM\obj\Debug\net8.0\DemoRM.AssemblyInfoInputs.cache
-C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DemoRM\obj\Debug\net8.0\DemoRM.AssemblyInfo.cs
-C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DemoRM\obj\Debug\net8.0\DemoRM.csproj.CoreCompileInputs.cache
-C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DemoRM\obj\Debug\net8.0\DemoRM.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DemoRM\obj\Debug\net8.0\DemoRM.sourcelink.json

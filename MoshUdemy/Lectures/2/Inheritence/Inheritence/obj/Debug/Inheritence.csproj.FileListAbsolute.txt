@@ -1,7 +1,0 @@
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Inheritence\Inheritence\bin\Debug\Inheritence.exe.config
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Inheritence\Inheritence\bin\Debug\Inheritence.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Inheritence\Inheritence\bin\Debug\Inheritence.pdb
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Inheritence\Inheritence\obj\Debug\Inheritence.csproj.AssemblyReference.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Inheritence\Inheritence\obj\Debug\Inheritence.csproj.CoreCompileInputs.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Inheritence\Inheritence\obj\Debug\Inheritence.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Inheritence\Inheritence\obj\Debug\Inheritence.pdb

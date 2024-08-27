@@ -1,7 +1,0 @@
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W5\w5\w5\obj\Debug\w5.csproj.AssemblyReference.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W5\w5\w5\obj\Debug\w5.csproj.CoreCompileInputs.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W5\w5\w5\bin\Debug\w5.exe.config
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W5\w5\w5\bin\Debug\w5.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W5\w5\w5\bin\Debug\w5.pdb
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W5\w5\w5\obj\Debug\w5.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W5\w5\w5\obj\Debug\w5.pdb

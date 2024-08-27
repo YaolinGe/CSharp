@@ -1,7 +1,0 @@
-C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\WebCam\obj\Debug\net8.0\WebCam.csproj.AssemblyReference.cache
-C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\WebCam\obj\Debug\net8.0\WebCam.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\WebCam\obj\Debug\net8.0\WebCam.AssemblyInfoInputs.cache
-C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\WebCam\obj\Debug\net8.0\WebCam.AssemblyInfo.cs
-C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\WebCam\obj\Debug\net8.0\WebCam.csproj.CoreCompileInputs.cache
-C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\WebCam\obj\Debug\net8.0\WebCam.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\WebCam\obj\Debug\net8.0\WebCam.sourcelink.json
