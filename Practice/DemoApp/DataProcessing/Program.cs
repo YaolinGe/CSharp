@@ -1,20 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-<<<<<<< HEAD
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataProcessing;
-
-public class Program
-{
-    static void Main()
-    {
-        Console.WriteLine("Hello world!"); 
-    }
-}
-=======
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -137,4 +122,4 @@ class Program
         return interpolatedSeries;
     }
 }
->>>>>>> b86abade59bc48313fcf2fd3e0faeca5c072dc0c
+
