@@ -5,9 +5,9 @@ using System.IO;
 using System.Linq;
 
 
-namespace DataProcessing; 
+namespace DataProcessing;
 
-class DataProcessing
+public class DataProcessing
 {
     public string folderPath;
     public string[] sensorSelected;
@@ -19,7 +19,7 @@ class DataProcessing
         this.sensorSelected = sensorSelected ?? new string[] { "Accelerometer", "Strain" };
     }
 
-    public async Task LoadData()
+    public void LoadData()
     {
         string[] files = Directory.GetFiles(folderPath, "*.csv");
         foreach (string file in files)
@@ -108,23 +108,40 @@ class DataProcessing
         return interpolatedSeries;
     }
 
-    public double[,] NormalizeData(double[,] synchronizedData)
+    public double[,] NormalizeData(double[,] data)
     {
-        double[] minValues = new double[synchronizedData.GetLength(1)];
-        double[] maxValues = new double[synchronizedData.GetLength(1)];
+        int rows = data.GetLength(0);
+        int cols = data.GetLength(1);
+        double[,] normalizedData = new double[rows, cols];
 
-        for (int i = 0; i < synchronizedData.GetLength(1); i++)
+        for (int col = 0; col < cols; col++)
         {
-            minValues[i] = synchronizedData.Cast<double>().Skip(i).Take(synchronizedData.GetLength(0)).Min();
-            maxValues[i] = synchronizedData.Cast<double>().Skip(i).Take(synchronizedData.GetLength(0)).Max();
-        }
+            double min = double.MaxValue;
+            double max = double.MinValue;
 
-        double[,] normalizedData = new double[synchronizedData.GetLength(0), synchronizedData.GetLength(1)];
-        for (int i = 0; i < synchronizedData.GetLength(0); i++)
-        {
-            for (int j = 0; j < synchronizedData.GetLength(1); j++)
+            // Find the min and max values in the column
+            for (int row = 0; row < rows; row++)
             {
-                normalizedData[i, j] = (synchronizedData[i, j] - minValues[j]) / (maxValues[j] - minValues[j]);
+                if (data[row, col] < min) min = data[row, col];
+                if (data[row, col] > max) max = data[row, col];
+            }
+
+            // Check if min and max are the same
+            if (min == max)
+            {
+                // If all values are the same, set them to 0.5 (or any constant value between 0 and 1)
+                for (int row = 0; row < rows; row++)
+                {
+                    normalizedData[row, col] = .0;
+                }
+            }
+            else
+            {
+                // Normalize the column
+                for (int row = 0; row < rows; row++)
+                {
+                    normalizedData[row, col] = (data[row, col] - min) / (max - min);
+                }
             }
         }
         return normalizedData;
