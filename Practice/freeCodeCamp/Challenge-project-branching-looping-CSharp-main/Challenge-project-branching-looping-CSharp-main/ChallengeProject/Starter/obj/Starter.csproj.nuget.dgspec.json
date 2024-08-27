@@ -61,7 +61,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<<< HEAD:Practice/freeCodeCamp/Challenge-project-branching-looping-CSharp-main/Challenge-project-branching-looping-CSharp-main/ChallengeProject/Starter/obj/Starter.csproj.nuget.dgspec.json
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.106/PortableRuntimeIdentifierGraph.json"
+========
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.108/PortableRuntimeIdentifierGraph.json"
+>>>>>>>> b86abade59bc48313fcf2fd3e0faeca5c072dc0c:Practice/DemoApp/DemoRM/obj/DemoRM.csproj.nuget.dgspec.json
         }
       }
     }
