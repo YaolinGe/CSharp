@@ -6,6 +6,10 @@
 .git
 .git/
 
+*.zip
+**.zip
+*/*.zip
+**/**.zip
 
 # User-specific files
 *.rsuser
