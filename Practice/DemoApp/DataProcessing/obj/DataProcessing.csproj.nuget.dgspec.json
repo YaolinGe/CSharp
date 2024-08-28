@@ -49,6 +49,10 @@
             "Microsoft.Data.Analysis": {
               "target": "Package",
               "version": "[0.22.0-preview.24378.1, )"
+            },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.19.1, )"
             }
           },
           "imports": [

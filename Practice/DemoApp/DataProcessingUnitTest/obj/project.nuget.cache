@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kiLobQ7VVW2ds7a1C367KPJ0bVVnouuXAo6jzvF2bSyUCkvbcIjY1JHOpFqBLfM1nTGf5J3SssQodTPJOUh3Zw==",
+  "dgSpecHash": "UZ6wxvGrJXSVNGBbmfNgZHaqhSkD3PMc/EYYUIc/Jdk5wpgfN7uU3CbTzk3+k7pZjDQjLPIfPZYFHw/S4Vc4kw==",
   "success": true,
   "projectFilePath": "C:\\Users\\nq9093\\CodeSpace\\CSharp\\Practice\\DemoApp\\DataProcessingUnitTest\\DataProcessingUnitTest.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,8 @@
     "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.data.analysis\\0.22.0-preview.24378.1\\microsoft.data.analysis.0.22.0-preview.24378.1.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.ml.dataview\\4.0.0-preview.24378.1\\microsoft.ml.dataview.4.0.0-preview.24378.1.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.ml.onnxruntime\\1.19.1\\microsoft.ml.onnxruntime.1.19.1.nupkg.sha512",
+    "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.ml.onnxruntime.managed\\1.19.1\\microsoft.ml.onnxruntime.managed.1.19.1.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.net.test.sdk\\17.6.0\\microsoft.net.test.sdk.17.6.0.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\nq9093\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

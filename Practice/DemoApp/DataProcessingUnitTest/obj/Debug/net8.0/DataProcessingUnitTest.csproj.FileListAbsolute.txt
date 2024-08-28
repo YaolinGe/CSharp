@@ -108,3 +108,4 @@ C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DataProcessingUnitTest\obj\Deb
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DataProcessingUnitTest\obj\Debug\net8.0\DataProcessingUnitTest.pdb
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DataProcessingUnitTest\obj\Debug\net8.0\DataProcessingUnitTest.genruntimeconfig.cache
 C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DataProcessingUnitTest\obj\Debug\net8.0\ref\DataProcessingUnitTest.dll
+C:\Users\nq9093\CodeSpace\CSharp\Practice\DemoApp\DataProcessingUnitTest\bin\Debug\net8.0\plot.py

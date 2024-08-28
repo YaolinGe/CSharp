@@ -62,5 +62,69 @@ namespace DataProcessingUnitTest
                 }
             }
         }
+
+        [Fact]
+        public void TestCreateSequencesWithVariableSequenceLength()
+        {
+            var dp = new DataProcessing.DataProcessing(null, null);
+            double[,] data = new double[,]
+            {
+                { 1, 2, 3, 4, 5, 6 },
+                { 7, 8, 9, 10, 11, 12 },
+                { 13, 14, 15, 16, 17, 18 },
+                { 19, 20, 21, 22, 23, 24 }
+            };
+
+            int sequenceLength = 2;
+
+            List<double[,]> expected = new List<double[,]>
+            {
+                new double[,]
+                {
+                    { 1, 2, 3, 4, 5, 6 },
+                    { 7, 8, 9, 10, 11, 12 }
+                },
+                new double[,]
+                {
+                    { 7, 8, 9, 10, 11, 12 },
+                    { 13, 14, 15, 16, 17, 18 }
+                },
+                new double[,]
+                {
+                    { 13, 14, 15, 16, 17, 18 },
+                    { 19, 20, 21, 22, 23, 24 }
+                }
+            };
+
+            var result = dp.CreateSequences(data, sequenceLength);
+
+            Assert.Equal(expected.Count, result.Count);
+
+            for (int i = 0; i < expected.Count; i++)
+            {
+                Assert.True(AreEqual(expected[i], result[i]));
+            }
+        }
+
+        private static bool AreEqual(double[,] array1, double[,] array2)
+        {
+            if (array1.GetLength(0) != array2.GetLength(0) || array1.GetLength(1) != array2.GetLength(1))
+            {
+                return false;
+            }
+
+            for (int i = 0; i < array1.GetLength(0); i++)
+            {
+                for (int j = 0; j < array1.GetLength(1); j++)
+                {
+                    if (array1[i, j] != array2[i, j])
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
+        }
     }
 }

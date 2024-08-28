@@ -146,4 +146,28 @@ public class DataProcessing
         }
         return normalizedData;
     }
+
+    public List<double[,]> CreateSequences(double[,] data, int sequenceLength)
+    {
+        var sequences = new List<double[,]>();
+
+        int numSamples = data.GetLength(0);
+        int numFeatures = data.GetLength(1);
+
+        for (int i = 0; i <= numSamples - sequenceLength; i++)
+        {
+            var sequence = new double[sequenceLength, numFeatures];
+            for (int j = 0; j < sequenceLength; j++)
+            {
+                for (int k = 0; k < numFeatures; k++)
+                {
+                    sequence[j, k] = data[i + j, k];
+                }
+            }
+            sequences.Add(sequence);
+        }
+        return sequences;
+    }
+
+    
 }
