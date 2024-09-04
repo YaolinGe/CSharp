@@ -18,7 +18,8 @@ public class DataProcessing
 
     public DataProcessing(string folderPath, string[] sensorSelected)
     {
-        this.folderPath = folderPath ?? @"C:\Users\nq9093\CodeSpace\DeepLearningAI\DeepLearning\PyTorchBasics\practice\anomaly_detection\data\YaoBox\";
+        //this.folderPath = folderPath ?? @"C:\Users\nq9093\CodeSpace\DeepLearningAI\DeepLearning\PyTorchBasics\practice\anomaly_detection\data\YaoBox\";
+        this.folderPath = folderPath ?? @"C:\Users\nq9093\CodeSpace\DeepLearningAI\DeepLearning\PyTorchBasics\practice\anomaly_detection\data\strainTest\";
         this.sensorSelected = sensorSelected ?? new string[] { "Accelerometer", "Strain" };
     }
 
@@ -69,6 +70,9 @@ public class DataProcessing
 
     public double[,] SynchronizeData(Dictionary<string, List<KeyValuePair<DateTime, double>>> data)
     {
+        Console.WriteLine($"Synchronize data: {data.Count}");
+        Stopwatch stopwatch = new Stopwatch();
+        stopwatch.Start();
         var seriesList = data.Values.ToList();
         DateTime minTimestamp = seriesList.SelectMany(series => series.Select(kvp => kvp.Key)).Min();
         DateTime maxTimestamp = seriesList.SelectMany(series => series.Select(kvp => kvp.Key)).Max();
@@ -99,7 +103,8 @@ public class DataProcessing
                 result[j, i + 1] = interpolatedSeries[j].Value;
             }
         }
-
+        stopwatch.Stop();
+        Console.WriteLine($"Synlchronize data time consumed: {stopwatch.Elapsed.TotalSeconds} seconds");
         return result;
     }
 
@@ -197,20 +202,19 @@ public class DataProcessing
         return sequences;
     }
 
-    public double[,] GetDataSeriesFromColumnIndex(double[,] data, int[] indices)
+    public double[] GetDataSeriesFromColumnIndex(double[,] data, int index)
     {
+        Stopwatch stopwatch = new Stopwatch();
+        stopwatch.Start();
         int rows = data.GetLength(0);
-        int numIndices = indices.Length;
-        double[,] series = new double[rows, numIndices];
+        double[] series = new double[rows];
 
         for (int row = 0; row < rows; row++)
         {
-            for (int i = 0; i < numIndices; i++)
-            {
-                int index = indices[i];
-                series[row, i] = data[row, index];
-            }
+            series[row] = data[row, index];
         }
+        stopwatch.Stop();
+        Console.WriteLine($"Time consumed for fetching {rows} rows is {stopwatch.ElapsedMilliseconds} milliseconds");
         return series;
     }
 
@@ -232,7 +236,7 @@ public class DataProcessing
             // Write the dataDict rows
             for (int row = 0; row < rows; row++)
             {
-                writer.Write($"{elapsedSeconds[row]},");
+                writer.Write($"{commonTimeStamps[row]},");
                 for (int col = 0; col < cols - 1; col++)
                 {
                     writer.Write($"{data[row, col]},");

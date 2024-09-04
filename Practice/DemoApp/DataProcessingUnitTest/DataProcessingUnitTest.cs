@@ -1,13 +1,13 @@
-using DataProcessing;
 
-namespace DataProcessingUnitTest
+
+namespace Sandvik.Coromant.CoroPlus.Tooling.SilentTools.BlazorApp.Pages.Playground.DevelopmentModules.AnomalyDetector
 {
     public class DataProcessingUnitTest
     {
         [Fact]
         public void TestNormalizeColumns()
         {
-            var dp = new DataProcessing.DataProcessing(null, null);
+            var dp = new DataProcessing(null, null);
             double[,] data = new double[,]
             {
             { 1, 2, 3 },
@@ -31,13 +31,13 @@ namespace DataProcessingUnitTest
                     Assert.Equal(expected[i, j], result[i, j], 1e-6);
                 }
             }
-            
+
         }
 
         [Fact]
         public void TestNormalizeColumnsWithConstantValues()
         {
-            var dp = new DataProcessing.DataProcessing(null, null);
+            var dp = new DataProcessing(null, null);
             double[,] data = new double[,]
             {
             { 5, 5, 5 },
@@ -66,7 +66,7 @@ namespace DataProcessingUnitTest
         [Fact]
         public void TestCreateSequencesWithVariableSequenceLength()
         {
-            var dp = new DataProcessing.DataProcessing(null, null);
+            var dp = new DataProcessing(null, null);
             double[,] data = new double[,]
             {
                 { 1, 2, 3, 4, 5, 6 },
@@ -125,6 +125,23 @@ namespace DataProcessingUnitTest
             }
 
             return true;
+        }
+
+        [Fact]
+        public void TestGetDataSeriesFromColumnIndex()
+        {
+            var dp = new DataProcessing(null, null);
+            double[,] data = new double[,]
+            {
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
+            };
+
+            double[] expected = new double[] { 2, 5, 8 };
+            double[] result = dp.GetDataSeriesFromColumnIndex(data, 1);
+            Assert.Equal(expected, result);
+
         }
     }
 }

@@ -9,15 +9,15 @@ class Program
         dataProcessing.LoadDataDictFromCSVFiles();
         var synchronizedData = dataProcessing.SynchronizeData(dataProcessing.dataDict);
         var normalizedData = dataProcessing.NormalizeData(synchronizedData);
-        double[] elapsedSeconds = dataProcessing.GetElapsedSeconds();
+
+        double[] x = dataProcessing.GetDataSeriesFromColumnIndex(normalizedData, 0);
+        double[] y = dataProcessing.GetDataSeriesFromColumnIndex(normalizedData, 1);
+
+        dataVisualizer.LinePlot(x, y);
 
         //string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads", "normalizedData.csv");
         //dataProcessing.SaveDataFrameToFile(filePath, normalizedData);
 
-        //var dv = new DataVisualizer();
-        //double[] x = new double[] { 1, 2, 3 };
-        //double[] y = new double[] { 4, 5, 6 };
-        //var line = dv.LinePlot(x, y);
 
         //LSTMAutoEncoder lstmAutoEncoder = new LSTMAutoEncoder();
         //lstmAutoEncoder.LoadModel();
@@ -30,7 +30,6 @@ class Program
         //string imageBase64 = dataVisualizer.PlotAnomalies(elapsedSeconds, strainData, indices);
 
         //string imageBase64 = dataVisualizer.PlotSubplots(normalizedData, elapsedSeconds);
-
 
     }
 

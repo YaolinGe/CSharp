@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataProcessing;
+using Sandvik.Coromant.CoroPlus.Tooling.SilentTools.BlazorApp.Pages.Playground.DevelopmentModules.AnomalyDetector;
+
 
 namespace DataProcessingUnitTest
 {
@@ -16,9 +17,7 @@ namespace DataProcessingUnitTest
             double[] x = new double[] { 1, 2, 3 };
             double[] y = new double[] { 4, 5, 6 };
 
-            string line = dv.LinePlot(x, y);
-
-            Assert.NotNull(line);
+            dv.LinePlot(x, y);
         }
     }
 }
