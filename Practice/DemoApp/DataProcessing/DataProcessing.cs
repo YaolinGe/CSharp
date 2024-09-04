@@ -11,15 +11,27 @@ public class DataProcessing
 {
     public string folderPath;
     public string[] sensorSelected;
-    public Dictionary<string, List<KeyValuePair<DateTime, double>>> dataDict = new Dictionary<string, List<KeyValuePair<DateTime, double>>>();
+
+    public Dictionary<string, List<KeyValuePair<DateTime, double>>> dataDictionary = new Dictionary<string, List<KeyValuePair<DateTime, double>>>();
     public List<string> Keys = [];
-    List<double> commonTimeStamps = new List<double>();
-    public double[,] dataArray; 
+
+    DateTime startTimeStamp; 
+    double[] commonTimeStamps;
+    int maxSamples;
+
+    public double[,] dataSynchronized;
+    public double[,] dataNormalized; 
 
     public DataProcessing(string folderPath, string[] sensorSelected)
     {
-        this.folderPath = folderPath ?? @"C:\Users\nq9093\CodeSpace\DeepLearningAI\DeepLearning\PyTorchBasics\practice\anomaly_detection\data\YaoBox\";
+        this.folderPath = folderPath ?? @"C:\Users\nq9093\CodeSpace\DeepLearningAI\DeepLearning\PyTorchBasics\practice\anomaly_detection\data\YaoBox\processed\";
+        //this.folderPath = folderPath ?? @"C:\Users\nq9093\CodeSpace\DeepLearningAI\DeepLearning\PyTorchBasics\practice\anomaly_detection\data\strainTest\";
         this.sensorSelected = sensorSelected ?? new string[] { "Accelerometer", "Strain" };
+
+        LoadDataDictFromCSVFiles();
+        CreateCommonTimeStamps();
+        SynchronizeData();
+        dataNormalized = NormalizeData(dataSynchronized);
     }
 
     public void LoadDataDictFromCSVFiles()
@@ -35,7 +47,7 @@ public class DataProcessing
                     Stopwatch stopwatch = new Stopwatch();
                     stopwatch.Start();
 
-                    dataDict.Add(fileName, LoadCSVFromFile(file));
+                    dataDictionary.Add(fileName, LoadCSVFromFile(file));
                     Keys.Add(fileName);
 
                     stopwatch.Stop();
@@ -48,6 +60,8 @@ public class DataProcessing
     public List<KeyValuePair<DateTime, double>> LoadCSVFromFile(string file)
     {
         List<KeyValuePair<DateTime, double>> dataList = new List<KeyValuePair<DateTime, double>>();
+        int count = 0;
+
         using (StreamReader reader = new StreamReader(file))
         {
             string[] headers = reader.ReadLine().Split(',');
@@ -61,89 +75,118 @@ public class DataProcessing
                 double value = double.Parse(rows[1]);
 
                 dataList.Add(new KeyValuePair<DateTime, double>(timestamp, value));
+                count++;
             }
         }
+
+        if (count > maxSamples)
+            maxSamples = count;
+
+        Console.WriteLine($"Loaded {count} rows from {Path.GetFileName(file)}; MaxSamples is {maxSamples}"); 
+
         return dataList;
     }
 
-
-    public double[,] SynchronizeData(Dictionary<string, List<KeyValuePair<DateTime, double>>> data)
+    public void CreateCommonTimeStamps()
     {
-        var seriesList = data.Values.ToList();
+        var seriesList = dataDictionary.Values.ToList();
         DateTime minTimestamp = seriesList.SelectMany(series => series.Select(kvp => kvp.Key)).Min();
         DateTime maxTimestamp = seriesList.SelectMany(series => series.Select(kvp => kvp.Key)).Max();
-        int maxSamples = seriesList.Max(series => series.Count);
         double interval = (maxTimestamp - minTimestamp).TotalSeconds / (maxSamples - 1);
-
-        // Generate common timestamps in elapsed seconds
+        commonTimeStamps = new double[maxSamples];
+        
         for (int i = 0; i < maxSamples; i++)
         {
-            commonTimeStamps.Add(i * interval);
+            commonTimeStamps[i] = i * interval;
         }
-
-        // Initialize the result array with an extra column for the common timestamps
-        double[,] result = new double[commonTimeStamps.Count, seriesList.Count + 1];
-
-        // Fill the first column with the common timestamps
-        for (int i = 0; i < commonTimeStamps.Count; i++)
+        
+        if (startTimeStamp < minTimestamp)
         {
-            result[i, 0] = commonTimeStamps[i];
+            startTimeStamp = minTimestamp;
         }
-
-        // Interpolate each series and fill the result array
-        for (int i = 0; i < seriesList.Count; i++)
-        {
-            var interpolatedSeries = Interpolate(seriesList[i], commonTimeStamps, minTimestamp);
-            for (int j = 0; j < commonTimeStamps.Count; j++)
-            {
-                result[j, i + 1] = interpolatedSeries[j].Value;
-            }
-        }
-
-        return result;
     }
 
-    private List<KeyValuePair<double, double>> Interpolate(List<KeyValuePair<DateTime, double>> series, List<double> commonTimeStamps, DateTime minTimestamp)
+    public void SynchronizeData()
     {
-        List<KeyValuePair<double, double>> interpolatedSeries = new List<KeyValuePair<double, double>>();
+        Stopwatch stopwatch = new Stopwatch();
+        stopwatch.Start();
 
-        for (int i = 0; i < commonTimeStamps.Count; i++)
+        dataSynchronized = new double[commonTimeStamps.Length, dataDictionary.Count + 1];
+
+        foreach (var itemList in dataDictionary.Values.ToList())
         {
-            double elapsedSeconds = commonTimeStamps[i];
-            DateTime targetTime = minTimestamp.AddSeconds(elapsedSeconds);
-
-            // Find the closest points for interpolation
-            var lower = series.LastOrDefault(kvp => kvp.Key <= targetTime);
-            var upper = series.FirstOrDefault(kvp => kvp.Key >= targetTime);
-
-            if (lower.Key == default(DateTime) || upper.Key == default(DateTime))
+            double[] interpolatedSamples = Interpolate(itemList);
+            for (int i = 0; i < maxSamples; i++)
             {
-                interpolatedSeries.Add(new KeyValuePair<double, double>(elapsedSeconds, double.NaN));
+                dataSynchronized[i, 0] = commonTimeStamps[i];
+                dataSynchronized[i, dataDictionary.Values.ToList().IndexOf(itemList) + 1] = interpolatedSamples[i];
             }
-            else if (lower.Key == upper.Key)
+        }
+
+        stopwatch.Stop();
+        Console.WriteLine($"Synchronizing the data took {stopwatch.Elapsed.TotalSeconds} seconds");
+    }
+
+    private double[] Interpolate(List<KeyValuePair<DateTime, double>> series)
+    {
+        Stopwatch stopwatch = new Stopwatch();
+        stopwatch.Start();
+        double[] interpolatedSamples = new double[maxSamples];
+
+        double[] deltaTime = new double[series.Count];
+        for (int i = 0; i < series.Count - 1; i++)
+        {
+            deltaTime[i] = (series[i].Key - startTimeStamp).TotalSeconds;
+        }
+
+        for (int i = 0; i < maxSamples; i++)
+        {
+            double currentTimeStamp = commonTimeStamps[i];
+
+            int j = 0;
+            while (deltaTime[j] < currentTimeStamp)
             {
-                interpolatedSeries.Add(new KeyValuePair<double, double>(elapsedSeconds, lower.Value));
+                j++;
+                if (j == series.Count)
+                {
+                    break;
+                }
+            }
+            if (j == 0)
+            {
+                interpolatedSamples[i] = series[j].Value;
+            }
+            else if (j == series.Count)
+            {
+                interpolatedSamples[i] = series[j - 1].Value;
             }
             else
             {
-                // Linear interpolation
-                double t = (targetTime - lower.Key).TotalSeconds / (upper.Key - lower.Key).TotalSeconds;
-                double interpolatedValue = lower.Value + t * (upper.Value - lower.Value);
-                interpolatedSeries.Add(new KeyValuePair<double, double>(elapsedSeconds, interpolatedValue));
+                interpolatedSamples[i] = series[j].Value + (currentTimeStamp - deltaTime[j]) * (series[j + 1].Value - series[j].Value) / (deltaTime[j + 1] - deltaTime[j]);
             }
         }
-
-        return interpolatedSeries;
+        stopwatch.Stop();
+        Console.WriteLine($"Interpolating the original {series.Count} samples to {maxSamples} took {stopwatch.Elapsed.TotalSeconds} seconds");
+        return interpolatedSamples;
     }
 
-    public double[,] NormalizeData(double[,] data)
+    public double[, ] NormalizeData(double[, ] data)
     {
         int rows = data.GetLength(0);
         int cols = data.GetLength(1);
         double[,] normalizedData = new double[rows, cols];
 
-        for (int col = 1; col < cols; col++)  // skip the first column (common timestamps)
+        for (int col = 0; col < cols; col++)  
         {
+            if (col == 0)
+            {
+                for (int row = 0; row < rows; row++)
+                {
+                    normalizedData[row, col] = data[row, col];
+                }
+                continue;
+            }
+
             double min = double.MaxValue;
             double max = double.MinValue;
 
@@ -157,7 +200,6 @@ public class DataProcessing
             // Check if min and max are the same
             if (min == max)
             {
-                // If all values are the same, set them to 0.5 (or any constant value between 0 and 1)
                 for (int row = 0; row < rows; row++)
                 {
                     normalizedData[row, col] = .0;
@@ -165,7 +207,6 @@ public class DataProcessing
             }
             else
             {
-                // Normalize the column
                 for (int row = 0; row < rows; row++)
                 {
                     normalizedData[row, col] = (data[row, col] - min) / (max - min);
@@ -175,42 +216,19 @@ public class DataProcessing
         return normalizedData;
     }
 
-    public List<double[,]> CreateSequences(double[,] data, int sequenceLength)
+    public double[] GetDataSeriesFromColumnIndex(double[,] data, int index)
     {
-        var sequences = new List<double[,]>();
-
-        int numSamples = data.GetLength(0);
-        int numFeatures = data.GetLength(1);
-
-        for (int i = 0; i <= numSamples - sequenceLength; i++)
-        {
-            var sequence = new double[sequenceLength, numFeatures];
-            for (int j = 0; j < sequenceLength; j++)
-            {
-                for (int k = 0; k < numFeatures; k++)
-                {
-                    sequence[j, k] = data[i + j, k];
-                }
-            }
-            sequences.Add(sequence);
-        }
-        return sequences;
-    }
-
-    public double[,] GetDataSeriesFromColumnIndex(double[,] data, int[] indices)
-    {
+        Stopwatch stopwatch = new Stopwatch();
+        stopwatch.Start();
         int rows = data.GetLength(0);
-        int numIndices = indices.Length;
-        double[,] series = new double[rows, numIndices];
+        double[] series = new double[rows];
 
         for (int row = 0; row < rows; row++)
         {
-            for (int i = 0; i < numIndices; i++)
-            {
-                int index = indices[i];
-                series[row, i] = data[row, index];
-            }
+            series[row] = data[row, index];
         }
+        stopwatch.Stop();
+        Console.WriteLine($"Time consumed for fetching {rows} rows is {stopwatch.ElapsedMilliseconds} milliseconds");
         return series;
     }
 
@@ -232,7 +250,7 @@ public class DataProcessing
             // Write the dataDict rows
             for (int row = 0; row < rows; row++)
             {
-                writer.Write($"{elapsedSeconds[row]},");
+                writer.Write($"{commonTimeStamps[row]},");
                 for (int col = 0; col < cols - 1; col++)
                 {
                     writer.Write($"{data[row, col]},");
@@ -241,5 +259,15 @@ public class DataProcessing
             }
         }
         Console.WriteLine(rows + " rows " + cols + " columns of data saved to " + filePath);
+    }
+
+    public double[] GetValueFromIndices(double[] data, int[] indices)
+    {
+        double[] values = new double[indices.Length];
+        for (int i = 0; i < indices.Length; i++)
+        {
+            values[i] = data[indices[i]];
+        }
+        return values;
     }
 }

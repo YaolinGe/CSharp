@@ -63,3 +63,68 @@ artifacts/
 
 /Practice/DemoApp/ARIMA/bin/Debug/net7.0/runtimes/win-x64/native/tensorflow.dll
 /Practice/DemoApp/ARIMA/bin/Debug/net7.0/runtimes/linux-x64/native/libtensorflow.so
+
+# Ignore build directories
+**/bin/
+**/obj/
+
+# Ignore .NET Core build outputs for all versions (netstandard, netcoreapp, netframework, etc.)
+**/bin/**/net*
+**/obj/**/net*
+
+# Ignore Visual Studio/VS Code cache and settings files
+.vscode/
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore compiled DLLs and PDBs
+*.dll
+*.pdb
+
+# Ignore other generated files
+*.exe
+*.appx
+*.cache
+*.log
+*.vsix
+*.pyc
+*.pycache/
+*.json
+
+# Ignore NuGet packages
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+project.assets.json
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+# Ignore package files
+packages/
+*.log
+*.pidb
+*.ilk
+*.meta
+*.obj
+*.tmp
+
+# Ignore publish directory
+**/publish/
+
+# Only track source code files (.cs)
+!**/*.cs
+
+**/*.onnx 
+
+Practice/machinelearning-samples
+/Practice/machinelearning-samples
+**/Practice/machinelearning-samples/* 
+**/Practice/machinelearning-samples/**
+Practice/machinelearning-samples/*
+Practice/machinelearning-samples/**/*
+*/Practice/machinelearning-samples/*

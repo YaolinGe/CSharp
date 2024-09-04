@@ -1,2 +1,0 @@
-C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\publish\win-x64\CutFileParserCLI.pdb
-C:\Users\nq9093\CodeSpace\CSharp\CutFileParserCLI\CutFileParserCLI\bin\Release\net7.0\publish\win-x64\CutFileParserCLI.exe

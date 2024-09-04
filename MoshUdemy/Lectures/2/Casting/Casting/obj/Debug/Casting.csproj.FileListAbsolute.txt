@@ -1,7 +1,0 @@
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Casting\Casting\bin\Debug\Casting.exe.config
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Casting\Casting\bin\Debug\Casting.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Casting\Casting\bin\Debug\Casting.pdb
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Casting\Casting\obj\Debug\Casting.csproj.AssemblyReference.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Casting\Casting\obj\Debug\Casting.csproj.CoreCompileInputs.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Casting\Casting\obj\Debug\Casting.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Casting\Casting\obj\Debug\Casting.pdb

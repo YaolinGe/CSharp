@@ -1,7 +1,0 @@
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Composition\Composition\bin\Debug\Composition.exe.config
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Composition\Composition\bin\Debug\Composition.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Composition\Composition\bin\Debug\Composition.pdb
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Composition\Composition\obj\Debug\Composition.csproj.AssemblyReference.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Composition\Composition\obj\Debug\Composition.csproj.CoreCompileInputs.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Composition\Composition\obj\Debug\Composition.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Lectures\2\Composition\Composition\obj\Debug\Composition.pdb

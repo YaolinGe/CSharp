@@ -12,37 +12,54 @@
 
             string filePath = args[0];
 
+            // Gen 1
+            //List<string> sensors = new List<string>
+            //{
+            //    //"BobbenAccelerometerX",
+            //    //"BobbenAccelerometerY",
+            //    "Box1Accelerometer2GRaw0",
+            //    "Box1Accelerometer2GRaw1",
+            //    "Box1Accelerometer2GRaw2",
+            //    "Box1Accelerometer50GRaw0",
+            //    "Box1Accelerometer50GRaw1",
+            //    "Box2StrainRaw0",
+            //    "Box2StrainRaw1",
+            //    "Box3Clock",
+            //    "Box1ClockPeripheral",
+            //    "Box2ClockPeripheral",
+            //    "Deflection",
+            //    "Load",
+            //    "SurfaceFinish",
+            //    "Vibration",
+            //    "Temperature"
+            //};
+
+
+            // Gen 2
             List<string> sensors = new List<string>
             {
-                //"BobbenAccelerometerX",
-                //"BobbenAccelerometerY",
-                "Box1Accelerometer2GRaw0",
-                "Box1Accelerometer2GRaw1",
-                "Box1Accelerometer2GRaw2",
-                "Box1Accelerometer50GRaw0",
-                "Box1Accelerometer50GRaw1",
-                "Box2StrainRaw0",
-                "Box2StrainRaw1",
-                "Box3Clock",
-                "Box1ClockPeripheral",
-                "Box2ClockPeripheral",
+                "BenderStrainRaw0",
+                "BenderStrainRaw1",
+                "ZeldaClock",
+                "PacmanClockPeripheral",
+                "BenderClockPeripheral",
+                "PacmanAccelerometerRaw0",
+                "PacmanAccelerometerRaw1",
+                "PacmanAccelerometerRaw2",
                 "Deflection",
                 "Load",
                 "SurfaceFinish",
                 "Vibration",
-                "Temperature"
-            };
+                "Temperature",
+                "SP1",
+                "U1",
+                "W1",
+                "X1",
+                "Z1",
+            }; 
 
-            CutFileLoader loader = new CutFileLoader(filePath);
-
-            // Save sensor data to a Protobuf file
-            //await loader.SaveSensorDataToProtobuf(filePath, sensorName);
-            //foreach (string sensorName in sensors)
-            //{
-            //    await loader.SaveSensorDataToCSV(filePath, sensorName);
-            //}
-
-            //await loader.DuplicateCutFileAsync(@"C:\Users\nq9093\AppData\Local\SensorizedTools\data\CoroPlus_230912-125304_1.cut");
+            CutFileParser parser = new CutFileParser(filePath);
+            await parser.SaveSensorDataToCSVsAsync(filePath, sensors);
         }
     }
 }

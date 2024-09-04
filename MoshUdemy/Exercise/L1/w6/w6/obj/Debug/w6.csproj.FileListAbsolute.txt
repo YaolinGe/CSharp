@@ -1,7 +1,0 @@
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W6\w6\w6\bin\Debug\w6.exe.config
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W6\w6\w6\bin\Debug\w6.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W6\w6\w6\bin\Debug\w6.pdb
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W6\w6\w6\obj\Debug\w6.csproj.AssemblyReference.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W6\w6\w6\obj\Debug\w6.csproj.CoreCompileInputs.cache
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W6\w6\w6\obj\Debug\w6.exe
-C:\cygwin64\home\nq9093\CodeSpace\CSharp\Exercise\W6\w6\w6\obj\Debug\w6.pdb

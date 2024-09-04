@@ -1,63 +1,128 @@
 ﻿using Microsoft.ML.OnnxRuntime.Tensors;
 using Microsoft.ML.OnnxRuntime;
+using System.Diagnostics;
+namespace Sandvik.Coromant.CoroPlus.Tooling.SilentTools.BlazorApp.Pages.Playground.DevelopmentModules.AnomalyDetector;
 
-namespace DataProcessing
+
+public class LSTMAutoEncoder
 {
-    public class LSTMAutoEncoder
+    private InferenceSession _session;
+    double threshold = 0.00018678485066629904;
+    public List<int> indicesAnomaly = new List<int>();
+    public List<double> errorAnomaly = new List<double>();
+
+    public LSTMAutoEncoder()
     {
-        private InferenceSession _session;
-        DataProcessing dataProcessing = new DataProcessing(null, null);
-        DataVisualizer dataVisualizer = new DataVisualizer();
-        double threshold = 0.00018678485066629904;
+        SessionOptions sessionOptions = new();
+        //sessionOptions.AppendExecutionProvider_CUDA(0);
 
-        public void LoadModel()
+        _session = new InferenceSession("C:\\Users\\nq9093\\CodeSpace\\DeepLearningAI\\DeepLearning\\PyTorchBasics\\practice\\anomaly_detection\\anomalyDetectionMultiChannel.onnx", sessionOptions);
+        Console.WriteLine("Model loaded successfully");
+    }
+
+    public void RunAnomalyDetection(double[,] data)
+    {
+        int sequenceLength = 30;
+        double[,,] sequences = CreateSequences(data, sequenceLength);
+
+        Stopwatch totalStopwatch = new Stopwatch();
+        totalStopwatch.Start();
+
+        for (int i = 0; i < sequences.GetLength(0); i++)
         {
-            _session = new InferenceSession("C:\\Users\\nq9093\\CodeSpace\\DeepLearningAI\\DeepLearning\\PyTorchBasics\\practice\\anomaly_detection\\anomalyDetectionMultiChannel.onnx");
-            Console.WriteLine("Model loaded successfully");
-        }
+            Stopwatch iterationStopwatch = new Stopwatch();
+            iterationStopwatch.Start();
 
-        public void RunAnomalyDetection(double[,] data)
-        {
-            int sequenceLength = 30;
-            var sequences = dataProcessing.CreateSequences(data, sequenceLength);
-            var indices_anomalies = new List<int>();
-            int cnt = 0;
+            DenseTensor<float> inputTensor = new DenseTensor<float>(new[] { 1, sequenceLength, sequences.GetLength(2) });
 
-            foreach (var sequence in sequences)
+            for (int j = 0; j < sequences.GetLength(1); j++)
             {
-                var inputTensor = new DenseTensor<float>(new[] { 1, sequenceLength, 7 });
-
-                for (int i = 0; i < sequenceLength; i++)
+                for (int k = 0; k < sequences.GetLength(2); k++)
                 {
-                    for (int j = 0; j < 7; j++)
-                    {
-                        inputTensor[0, i, j] = (float)sequence[i, j];
-                    }
+                    inputTensor[0, j, k] = (float)sequences[i, j, k];
                 }
+            }
 
-                var input = new NamedOnnxValue[]
-                {
-                    NamedOnnxValue.CreateFromTensor("input", inputTensor)
-                };
+            Tensor<float> outputTensor = GetInference(inputTensor);
 
-                using IDisposableReadOnlyCollection<DisposableNamedOnnxValue> results = _session.Run(input);
+            double error = CalculateError(outputTensor, inputTensor);
 
-                var outputTensor = results.First().AsTensor<float>();
+            iterationStopwatch.Stop();
+            Console.WriteLine($"Error: {error} Time taken for inference: {iterationStopwatch.ElapsedMilliseconds} milliseconds");
+            iterationStopwatch.Reset();
 
-                double error = 0;
-                for (int j = 0; j < 7; j++)
-                {
-                    var diff = inputTensor[0, sequenceLength - 1, j] - outputTensor[0, sequenceLength - 1, j];
-                    error += Math.Pow(diff, 2);
-                }
-
-                if (error > threshold)
-                {
-                    indices_anomalies.Add(cnt);
-                }
-                cnt++;
-                Console.WriteLine(cnt);
+            if (error > threshold)
+            {
+                indicesAnomaly.Add(i);
+                errorAnomaly.Add(error);
+                Console.WriteLine($"Anomaly detected at index {i} with error {error}");
             }
         }
+        totalStopwatch.Stop();
+        Console.WriteLine($"Time taken for all inferences: {totalStopwatch.ElapsedMilliseconds} milliseconds");
+    }
+
+    public double[,,] CreateSequences(double[,] data, int sequenceLength)
+    {
+        int numSamples = data.GetLength(0);
+        int numColumns = data.GetLength(1);  // No timestamp is included in the data, so the number of columns is the number of features
+
+        double[,,] sequences = new double[numSamples - sequenceLength + 1, sequenceLength, numColumns];
+
+        for (int i = 0; i <= numSamples - sequenceLength; i++)
+        {
+            for (int j = 0; j < sequenceLength; j++)
+            {
+                for (int k = 0; k < numColumns; k++)
+                {
+                    sequences[i, j, k] = data[i + j, k];
+                }
+            }
+        }
+        return sequences;
+    }
+
+    public Tensor<float> GetInference(DenseTensor<float> input)
+    {
+        NamedOnnxValue[] inputs = new NamedOnnxValue[]
+        {
+            NamedOnnxValue.CreateFromTensor("input", input)
+        };
+
+        using IDisposableReadOnlyCollection<DisposableNamedOnnxValue> results = _session.Run(inputs);
+
+        Tensor<float> outputTensor = results.First().AsTensor<float>();
+        return outputTensor;
+    }
+
+    public static double CalculateError(Tensor<float> inputTensor, Tensor<float> outputTensor)
+    {
+        ReadOnlySpan<int> outputShapeSpan = outputTensor.Dimensions;
+        int[] outputShape = outputShapeSpan.ToArray();
+
+        // Ensure the input and output tensors have the same shape
+        if (!inputTensor.Dimensions.SequenceEqual(outputShape))
+        {
+            throw new InvalidOperationException("Input and output tensors must have the same shape.");
+        }
+
+        double error = 0;
+        int batchSize = outputShape[0];
+        int sequenceLength = outputShape[1];
+        int featureSize = outputShape[2];
+
+        for (int i = 0; i < batchSize; i++)
+        {
+            for (int j = 0; j < sequenceLength; j++)
+            {
+                for (int k = 0; k < featureSize; k++)
+                {
+                    double diff = inputTensor[i, j, k] - outputTensor[i, j, k];
+                    error += diff * diff;
+                }
+            }
+        }
+        error /= (batchSize * sequenceLength * featureSize);
+        return error;
     }
 }
