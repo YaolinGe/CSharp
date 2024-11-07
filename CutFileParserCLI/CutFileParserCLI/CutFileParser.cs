@@ -21,6 +21,9 @@ namespace CutFileParser
 
         public async Task SaveSensorDataToCSVsAsync(string filePath, List<string> sensors)
         {
+            var stopwatch = new System.Diagnostics.Stopwatch();
+            stopwatch.Start();
+
             foreach (var sensorName in sensors)
             {
                 List<KeyValuePair<TimeSpan, double>> data = await GetSensorDataAsync(sensorName);
@@ -37,6 +40,9 @@ namespace CutFileParser
 
                 Console.WriteLine($"Sensor data for '{sensorName}' has been saved to '{csvFileName}'");
             }
+
+            stopwatch.Stop();
+            Console.WriteLine($"Process completed in {stopwatch.Elapsed.TotalSeconds} seconds.");
         }
 
         public async Task<List<KeyValuePair<TimeSpan, double>>> GetSensorDataAsync(string sensorName)
