@@ -4,39 +4,73 @@
     {
         static async Task Main(string[] args)
         {
-            if (args.Length < 1)
+            if (args.Length < 2)
             {
-                Console.WriteLine("Usage: CutFileParserCLI.exe <cutFilePath>");
+                Console.WriteLine("Usage: CutFileParserCLI.exe <cutFilePath> <generation:Gen1|Gen2> <parallel:true|false> <outputDirectory>");
                 return;
             }
 
             string filePath = args[0];
+            string generation = args[1];
+            bool useParallel = bool.Parse(args[2]);
+            string outputDirectory = args.Length > 3 ? args[3] : Path.Combine(Path.GetTempPath(), "CutFileParser"); 
 
-            // Gen 1
-            //List<string> sensors = new List<string>
-            //{
-            //    //"BobbenAccelerometerX",
-            //    //"BobbenAccelerometerY",
-            //    "Box1Accelerometer2GRaw0",
-            //    "Box1Accelerometer2GRaw1",
-            //    "Box1Accelerometer2GRaw2",
-            //    "Box1Accelerometer50GRaw0",
-            //    "Box1Accelerometer50GRaw1",
-            //    "Box2StrainRaw0",
-            //    "Box2StrainRaw1",
-            //    "Box3Clock",
-            //    "Box1ClockPeripheral",
-            //    "Box2ClockPeripheral",
-            //    "Deflection",
-            //    "Load",
-            //    "SurfaceFinish",
-            //    "Vibration",
-            //    "Temperature"
-            //};
+            List<string> sensors;
+            if (generation.Equals("Gen1", StringComparison.OrdinalIgnoreCase))
+            {
+                sensors = GetGen1Sensors();
+            }
+            else
+            {
+                sensors = GetGen2Sensors();
+            }
 
+            CutFileParser parser = new CutFileParser(filePath);
 
-            // Gen 2
-            List<string> sensors = new List<string>
+            var stopwatch = new System.Diagnostics.Stopwatch();
+            stopwatch.Start();
+
+            if (useParallel)
+            {
+                await parser.SaveSensorDataToCSVsAsync(filePath, sensors, outputDirectory);
+            }
+            else
+            {
+                foreach (string sensorName in sensors)
+                {
+                    await parser.SaveSensorDataToCSV(filePath, sensorName, outputDirectory);
+                }
+            }
+
+            stopwatch.Stop();
+            Console.WriteLine($"Parsing completed in {stopwatch.Elapsed.TotalSeconds} seconds. Parallel: {useParallel}");
+        }
+
+        private static List<string> GetGen1Sensors()
+        {
+            return new List<string>
+            {
+                "Box1Accelerometer2GRaw0",
+                "Box1Accelerometer2GRaw1",
+                "Box1Accelerometer2GRaw2",
+                "Box1Accelerometer50GRaw0",
+                "Box1Accelerometer50GRaw1",
+                "Box2StrainRaw0",
+                "Box2StrainRaw1",
+                "Box3Clock",
+                "Box1ClockPeripheral",
+                "Box2ClockPeripheral",
+                "Deflection",
+                "Load",
+                "SurfaceFinish",
+                "Vibration",
+                "Temperature"
+            };
+        }
+
+        private static List<string> GetGen2Sensors()
+        {
+            return new List<string>
             {
                 "BenderStrainRaw0",
                 "BenderStrainRaw1",
@@ -55,12 +89,8 @@
                 "U1",
                 "W1",
                 "X1",
-                "Z1",
-            }; 
-
-            CutFileParser parser = new CutFileParser(filePath);
-            await parser.SaveSensorDataToCSVsAsync(filePath, sensors);
+                "Z1"
+            };
         }
     }
 }
-
